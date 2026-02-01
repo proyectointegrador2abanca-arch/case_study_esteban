@@ -37,12 +37,10 @@ export function AbstractSection() {
                 <div className="mx-auto max-w-4xl text-center space-y-8">
                     <div className="mb-12 space-y-4">
                         <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-foreground">
-                            Engineered for Excellence.
-                            <br />
-                            Designed for Adventure.
+                            Abstract
                         </h2>
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                            Technology
+                            History of Architecture and Heritage
                         </p>
                     </div>
                     {[
