@@ -27,13 +27,13 @@ export function UrbanMorphologySection() {
                         <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                             <Image
                                 src="/imagenes_extraidas_pdf/calles_2.png"
-                                alt="Morphology After Haussmann"
+                                alt="Morphology Before Haussmann"
                                 fill
                                 className="object-contain"
                             />
                             <div className="absolute bottom-4 left-0 right-0 text-center">
                                 <span className="bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-foreground border border-border/50">
-                                    After Haussmann
+                                    Before Haussmann
                                 </span>
                             </div>
                         </div>
@@ -42,13 +42,13 @@ export function UrbanMorphologySection() {
                         <div className="absolute inset-0 z-0">
                             <Image
                                 src="/imagenes_extraidas_pdf/calles_1.png"
-                                alt="Morphology Before Haussmann"
+                                alt="Morphology After Haussmann"
                                 fill
                                 className="object-contain"
                             />
                             <div className="absolute bottom-4 left-0 right-0 text-center">
                                 <span className="bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-foreground border border-border/50">
-                                    Before Haussmann
+                                    After Haussmann
                                 </span>
                             </div>
                         </div>
