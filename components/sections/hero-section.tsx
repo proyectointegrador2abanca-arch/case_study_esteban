@@ -7,25 +7,25 @@ import { useEffect, useRef, useState } from "react";
 
 const sideImages = [
   {
-    src: "/images/paris-louvre.jpg",
+    src: "/imagenes_extraidas_pdf/img40.jpg",
     alt: "Louvre Museum Paris",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/paris-sacre-coeur.jpg",
+    src: "/imagenes_extraidas_pdf/img41.jpg",
     alt: "Sacre Coeur Montmartre",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/paris-notre-dame.jpg",
+    src: "/imagenes_extraidas_pdf/img51.jpg",
     alt: "Notre Dame Cathedral",
     position: "right",
     span: 1,
   },
   {
-    src: "/images/paris-opera.jpg",
+    src: "/imagenes_extraidas_pdf/img52.jpg",
     alt: "Paris Opera House",
     position: "right",
     span: 1,
@@ -126,7 +126,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero.png"
+                src="/imagenes_extraidas_pdf/img53.jpg"
                 alt="Main Hero Image"
                 fill
                 className="object-cover"
