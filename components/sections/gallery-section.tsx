@@ -14,10 +14,46 @@ export function GallerySection() {
   const images = [
     { src: "/images/bottle-bike.png", alt: "Thermal bottle on bike" },
     { src: "/images/bottle-lake.png", alt: "Thermal bottle by lake" },
-    { src: "/images/bottle-water.png", alt: "Thermal bottle in water" },
-    { src: "/images/bottle-stream.png", alt: "Thermal bottle by stream" },
-    { src: "/images/bottle-fire.png", alt: "Thermal bottle by fire" },
-    { src: "/images/bottle-snow.png", alt: "Thermal bottle in snow" },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img166.jpg",
+      alt: "Conclusion 1",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img167.jpg",
+      alt: "Conclusion 2",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img172.jpg",
+      alt: "Conclusion 3",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img174.jpg",
+      alt: "Conclusion 4",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img175.jpg",
+      alt: "Conclusion 5",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg",
+      alt: "Conclusion 6",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg",
+      alt: "Conclusion 7",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img185.jpg",
+      alt: "Conclusion 8",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img186.jpg",
+      alt: "Conclusion 9",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg",
+      alt: "Conclusion 10",
+    },
     { src: "/images/bottle-mountain.png", alt: "Thermal bottle on mountain" },
     { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
   ];
@@ -45,23 +81,23 @@ export function GallerySection() {
 
   const updateTransform = useCallback(() => {
     if (!galleryRef.current || !containerRef.current) return;
-    
+
     const rect = galleryRef.current.getBoundingClientRect();
     const containerWidth = containerRef.current.scrollWidth;
     const viewportWidth = window.innerWidth;
-    
+
     // Total scroll distance needed to reveal all images
     const totalScrollDistance = containerWidth - viewportWidth;
-    
+
     // Current scroll position within this section
     const scrolled = Math.max(0, -rect.top);
-    
+
     // Progress from 0 to 1
     const progress = Math.min(1, scrolled / totalScrollDistance);
-    
+
     // Calculate new translateX
     const newTranslateX = progress * -totalScrollDistance;
-    
+
     setTranslateX(newTranslateX);
   }, []);
 
@@ -71,14 +107,14 @@ export function GallerySection() {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
       }
-      
+
       // Use requestAnimationFrame for smooth updates
       rafRef.current = requestAnimationFrame(updateTransform);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     updateTransform();
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       if (rafRef.current) {
@@ -88,7 +124,7 @@ export function GallerySection() {
   }, [updateTransform]);
 
   return (
-    <section 
+    <section
       id="gallery"
       ref={galleryRef}
       className="relative bg-background"
@@ -98,7 +134,7 @@ export function GallerySection() {
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full items-center">
           {/* Horizontal scrolling container */}
-          <div 
+          <div
             ref={containerRef}
             className="flex gap-6 px-6"
             style={{
