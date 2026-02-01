@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface TimelineState {
-  year: number;
+  year: string;
   image: string;
   caption: string;
   description: string;
@@ -13,51 +13,50 @@ interface TimelineState {
 
 const timelineStates: TimelineState[] = [
   {
-    year: 1850,
+    year: "1800-1850",
     image: "/axonometrias/axonometria0.png",
     caption: "Before Baltard",
     description:
       "Les Halles were still a chaotic cluster of small open-air markets surrounded by medieval streets. Population growth and public hygiene were major concerns. The city’s authorities began planning a complete reconstruction of the market district. Early attempts failed for financial reasons, but the idea of transforming the area into a more rational, accessible market space was already taking shape. Only minor change occurred between 1800 and 1850, with no money to expropriate the inhabitants of this old neighborhood.",
   },
   {
-    year: 1855,
+    year: "1904",
     image: "/axonometrias/axonometria 1.png",
     caption: "The Haussmannian transformation",
     description:
       "In 1851, Victor Baltard was commissioned by Napoleon III to rebuild the market. His first heavy stone pavilion was rejected, and replaced by a revolutionary system of iron and glass, inspired by Paxton’s Crystal Palace and his competitors’ projects. Twelve pavilions were constructed progressively until the end of the century and into the next, until the end of the Second World War, mainly because of chronic lacks of fund, while surrounding streets were straightened or created to integrate them within Haussmann’s new grid.",
   },
   {
-    year: 1870,
+    year: "1904-1969",
     image: "/axonometrias/axonometria2.png",
     caption: "The 19th-century Halles",
     description:
       "The pavilions were among the first in Paris to use both steel-framed roofs and façades. They offered light, ventilation, and easy circulation. Its design follows the function but pastiches from roman, gothic and renaissance could be seen. Writers like Émile Zola described it as “the belly of Paris,” an architectural symbol of the modern city. At that time, modernization was associated with progress, not destruction. The old fabric was replaced almost without regret; the critics were positives about the change.",
   },
-
   {
-    year: 1971,
-    image: "/axonometrias/axonometria4.png",
+    year: "1973",
+    image: "/axonometrias/axonometria3.png",
     caption: "Demolition",
     description:
       "Designed for one million inhabitants in 1857, Les Halles rapidly became obsolete as Paris grew to 2.6 million by 1900. Overcrowding and outdated hygiene standards made the markets unsuitable for a modern metropolis. In 1962, the decision was taken to relocate wholesale trade to Rungis, completed in 1969. Despite strong opposition from citizens, architects, and intellectuals, the demolition of the pavilions began in 1971. Only one pavilion was preserved and relocated to Nogent-sur-Marne, while the rest of the site was cleared, leaving a vast void in the centre of Paris.",
   },
   {
-    year: 1975,
-    image: "/axonometrias/axonometria5.png",
+    year: "1973-1977",
+    image: "/axonometrias/axonometria4.png",
     caption: "The Void",
     description:
       "The destruction created, “the hole of Les Halles.” Beneath this void, the new underground train station for the RER network was being built, opening in 1977. On the surface, nothing remained. The debate over what to build next divided architects, politicians, and citizens for years.",
   },
   {
-    year: 1980,
-    image: "/axonometrias/axonometria6.png",
+    year: "1977-1986",
+    image: "/axonometrias/axonometria5.png",
     caption: "Construction of the Forum des Halles",
     description:
       "In 1973, the project by architects Claude Vasconi and Georges Pencréac’h was selected, later completed by Paul Chemetov. The new complex buried most of its program underground: shops, cinema, and transport, while the surface was turned into a garden. The Forum des Halles became one of the most frequented spaces in Paris. Renovation and rehabilitation were done around Les Halles, leading to an unprecedented gentrification.",
   },
   {
-    year: 2010,
-    image: "/axonometrias/axonometria7.png",
+    year: "2016-Nowadays",
+    image: "/axonometrias/axonometria6.png",
     caption: "The Canopée des Halles",
     description:
       "By the early 2000s, the Forum des Halles was considered obsolete, criticized for its lack of clarity, poor lighting, and weak relationship with the city above. The garden and the underground commercial spaces no longer responded to contemporary urban expectations. In 2004, the City of Paris launched an international competition to redesign the site. The project by Patrick Berger and Jacques Anziutti was selected, proposing a large glass and steel roof called La Canopée to cover the central void of the Forum. Construction began in 2010. The Canopée was inaugurated in 2016, bringing natural light back to the underground spaces and redefining Les Halles as a central metropolitan hub rather than a market.",
