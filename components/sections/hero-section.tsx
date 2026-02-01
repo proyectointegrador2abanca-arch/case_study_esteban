@@ -139,10 +139,10 @@ export function HeroSection() {
                 style={{ opacity: textOpacity }}
               >
                 <div className="flex flex-col items-center justify-end w-full pb-10">
-                  <span className="text-white/80 text-xl md:text-2xl lg:text-3xl font-bold tracking-widest uppercase mb-4 animate-[slideUp_0.8s_ease-out_forwards]">
+                  <span className="text-black/80 text-xl md:text-2xl lg:text-3xl font-light tracking-widest uppercase mb-4 animate-[slideUp_0.8s_ease-out_forwards]">
                     History of Architecture and Heritage
                   </span>
-                  <h1 className="w-full text-[15vw] font-extrabold leading-[0.8] tracking-tighter text-white text-center">
+                  <h1 className="w-full text-[15vw] font-medium leading-[0.8] tracking-tighter text-black text-center">
                     {"CASE STUDY".split("").map((letter, index) => (
                       <span
                         key={index}
