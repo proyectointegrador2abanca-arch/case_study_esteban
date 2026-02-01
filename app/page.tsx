@@ -1,3 +1,4 @@
+import { ResearchFrameworkSection } from "@/components/sections/research-framework-section";
 import { GeographicalContextSection } from "@/components/sections/geographical-context-section";
 
 import { Header } from "@/components/header";
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AbstractSection />
+      <ResearchFrameworkSection />
       <GeographicalContextSection />
       <ArchitecturalTimelineSection />
       <InteractiveMapSection />
