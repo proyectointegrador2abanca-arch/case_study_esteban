@@ -33,13 +33,7 @@ const timelineStates: TimelineState[] = [
     description:
       "The pavilions were among the first in Paris to use both steel-framed roofs and façades. They offered light, ventilation, and easy circulation. Its design follows the function but pastiches from roman, gothic and renaissance could be seen. Writers like Émile Zola described it as “the belly of Paris,” an architectural symbol of the modern city. At that time, modernization was associated with progress, not destruction. The old fabric was replaced almost without regret; the critics were positives about the change.",
   },
-  {
-    year: 1962,
-    image: "/axonometrias/axonometria3.png",
-    caption: "From prosperity to obsolescence",
-    description:
-      "The Halles were designed for one million inhabitants in 1857, but by 1900 Paris already had 2.6 million. The markets became overcrowded, and hygiene standards no longer met the needs of a growing city. In 1962, the city decided to relocate all wholesale trade to Rungis, in a new large-scale logistical complex. This marked beginning of the end of Les Halles as the food centre of Paris and of an uncertain future for the neighbourhood.",
-  },
+
   {
     year: 1971,
     image: "/axonometrias/axonometria4.png",
