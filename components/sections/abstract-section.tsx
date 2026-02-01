@@ -35,6 +35,16 @@ export function AbstractSection() {
                 className={`px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40`}
             >
                 <div className="mx-auto max-w-4xl text-center space-y-8">
+                    <div className="mb-12 space-y-4">
+                        <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-foreground">
+                            Engineered for Excellence.
+                            <br />
+                            Designed for Adventure.
+                        </h2>
+                        <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+                            Technology
+                        </p>
+                    </div>
                     {[
                         "This study looks at how the Les Halles area in central Paris has changed over time, focusing on two major moments of modernization: the 19th-century transformation led by Haussmann and Victor Baltard, and the redevelopment of the 1970s and 1980s after the market was moved out of the city.",
                         "Les Halles, located at the very centre of Paris and surrounded by major cultural and civic buildings, has always been an important urban site.",
