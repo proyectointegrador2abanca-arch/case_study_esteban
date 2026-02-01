@@ -62,11 +62,18 @@ const timelineStates: TimelineState[] = [
       "Digital infrastructure integrates with physical space. Public realm improvements prioritize pedestrians. Contemporary architecture dialogues with historic context.",
   },
   {
-    year: 2024,
-    image: "/images/city-2024.jpg",
-    caption: "Sustainable Futures",
+    year: 2010,
+    image: "/axonometrias/axonometria7.png",
+    caption: "Sustainable Integration",
     description:
-      "Green roofs and solar panels crown adaptive reuse projects. Pedestrian plazas reclaim streets from cars. The city breathes again, designed for people and planet alike.",
+      "Green spaces begin to weave into the urban fabric. Energy efficiency becomes a priority in new constructions. The city adapts to modern ecological standards.",
+  },
+  {
+    year: 2020,
+    image: "/axonometrias/axonometria8.png",
+    caption: "Resilient Future",
+    description:
+      "Adaptive reuse and smart city technologies define the new era. Urban spaces are redesigned for flexibility and community connection, blending heritage with innovation.",
   },
 ];
 
