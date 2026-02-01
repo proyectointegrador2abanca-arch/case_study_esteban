@@ -25,9 +25,9 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AbstractSection />
-      <ResearchFrameworkSection />
       <GeographicalContextSection />
       <ArchitecturalTimelineSection />
+      <ResearchFrameworkSection />
       <UrbanMorphologySection />
       <StratificationSection />
       <ParcelStructureSection />
