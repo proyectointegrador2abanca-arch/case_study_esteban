@@ -15,7 +15,7 @@ export function AbstractSection() {
                     }
                 });
             },
-            { threshold: 0.2 }
+            { threshold: 0.1 }
         );
 
         if (abstractRef.current) {
@@ -32,8 +32,7 @@ export function AbstractSection() {
         >
             <div
                 ref={abstractRef}
-                className={`px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40 transition-all duration-1000 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                    }`}
+                className={`px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40`}
             >
                 <div className="mx-auto max-w-4xl text-center space-y-8">
                     {[
@@ -52,9 +51,12 @@ export function AbstractSection() {
                     ].map((text, index) => (
                         <p
                             key={index}
-                            className={`text-xl leading-relaxed text-foreground/90 md:text-2xl lg:text-3xl lg:leading-snug transition-all duration-1000 ease-out transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                                }`}
-                            style={{ transitionDelay: `${index * 150}ms` }}
+                            className={`text-xl leading-relaxed text-foreground/90 md:text-2xl lg:text-3xl lg:leading-snug transition-all duration-1000 ease-out`}
+                            style={{
+                                transitionDelay: `${index * 150}ms`,
+                                opacity: isVisible ? 1 : 0,
+                                transform: isVisible ? "translateY(0)" : "translateY(20px)"
+                            }}
                         >
                             {text}
                         </p>
