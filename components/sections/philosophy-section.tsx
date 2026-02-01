@@ -91,7 +91,7 @@ export function PhilosophySection() {
                 {/* Removed label as per generic request "change meet alpine..." implying new context, keeping structure clean or swapping labels? User said "change meet alpine... to from 1910 to 2026". I'll assume labels might not be needed or should be swapped. I'll swap labels too just safely. */}
                 <div className="absolute bottom-6 left-6">
                   <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                    Forest $199
+                    Before
                   </span>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export function PhilosophySection() {
                 />
                 <div className="absolute bottom-6 left-6">
                   <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                    Alpine $299
+                    After
                   </span>
                 </div>
               </div>

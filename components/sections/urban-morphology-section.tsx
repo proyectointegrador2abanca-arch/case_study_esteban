@@ -53,6 +53,9 @@ export function UrbanMorphologySection() {
                             </div>
                         </div>
                     </div>
+                    <p className="text-center text-xs text-muted-foreground">
+                        Hover over the image to compare
+                    </p>
                 </div>
 
                 {/* Subsection 2: Haussmann / Forum */}
