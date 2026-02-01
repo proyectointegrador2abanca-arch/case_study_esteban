@@ -283,8 +283,38 @@ export function TechnologySection() {
 
 
         {/* Text Content */}
-        <div className="relative z-10 mx-auto max-w-4xl">
-          <ScrollRevealText text={descriptionText} />
+        <div className="relative z-10 mx-auto max-w-4xl space-y-12">
+          <div className="space-y-4">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+              Conclusions:
+            </h2>
+            <ScrollRevealText text={descriptionText} />
+          </div>
+
+          {/* Conclusions Image Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-12">
+            {[
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img166.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img167.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img172.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img174.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img175.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img185.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img186.jpg",
+              "/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
+            ].map((src, idx) => (
+              <div key={idx} className="relative aspect-square overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                <Image
+                  src={src}
+                  alt={`Conclusion image ${idx + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
