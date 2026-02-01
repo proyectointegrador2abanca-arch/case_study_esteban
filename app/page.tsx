@@ -1,3 +1,5 @@
+import { GeographicalContextSection } from "@/components/sections/geographical-context-section";
+
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AbstractSection } from "@/components/sections/abstract-section";
@@ -18,6 +20,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AbstractSection />
+      <GeographicalContextSection />
       <ArchitecturalTimelineSection />
       <InteractiveMapSection />
       <PhilosophySection />

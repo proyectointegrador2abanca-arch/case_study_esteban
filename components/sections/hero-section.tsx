@@ -19,13 +19,13 @@ const sideImages = [
     span: 1,
   },
   {
-    src: "/imagenes_extraidas_pdf/img51.jpg",
+    src: "/imagenes_extraidas_pdf/img57.jpg",
     alt: "Notre Dame Cathedral",
     position: "right",
     span: 1,
   },
   {
-    src: "/imagenes_extraidas_pdf/img52.jpg",
+    src: "/imagenes_extraidas_pdf/img63.jpg",
     alt: "Paris Opera House",
     position: "right",
     span: 1,
