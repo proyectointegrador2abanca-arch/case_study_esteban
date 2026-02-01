@@ -25,7 +25,7 @@ export function GeographicalContextSection() {
                                 src="/imagenes_extraidas_pdf/img40.jpg"
                                 alt="France Context"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="object-contain transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
                         <p className="text-center text-sm text-muted-foreground tracking-wide">
