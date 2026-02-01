@@ -6,6 +6,9 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { AbstractSection } from "@/components/sections/abstract-section";
 import { ArchitecturalTimelineSection } from "@/components/sections/architectural-timeline-section";
 import { UrbanMorphologySection } from "@/components/sections/urban-morphology-section";
+import { StratificationSection } from "@/components/sections/stratification-section";
+import { ParcelStructureSection } from "@/components/sections/parcel-structure-section";
+import { HeritageSection } from "@/components/sections/heritage-section";
 import { InteractiveMapSection } from "@/components/sections/interactive-map-section";
 import { PhilosophySection } from "@/components/sections/philosophy-section";
 import { FeaturedProductsSection } from "@/components/sections/featured-products-section";
@@ -26,6 +29,9 @@ export default function Home() {
       <GeographicalContextSection />
       <ArchitecturalTimelineSection />
       <UrbanMorphologySection />
+      <StratificationSection />
+      <ParcelStructureSection />
+      <HeritageSection />
       <InteractiveMapSection />
       <PhilosophySection />
       <FeaturedProductsSection />
