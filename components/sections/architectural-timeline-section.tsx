@@ -68,13 +68,6 @@ const timelineStates: TimelineState[] = [
     description:
       "Green spaces begin to weave into the urban fabric. Energy efficiency becomes a priority in new constructions. The city adapts to modern ecological standards.",
   },
-  {
-    year: 2020,
-    image: "/axonometrias/axonometria8.png",
-    caption: "Resilient Future",
-    description:
-      "Adaptive reuse and smart city technologies define the new era. Urban spaces are redesigned for flexibility and community connection, blending heritage with innovation.",
-  },
 ];
 
 export function ArchitecturalTimelineSection() {
