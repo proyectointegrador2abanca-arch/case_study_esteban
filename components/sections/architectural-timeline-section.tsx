@@ -35,21 +35,21 @@ const timelineStates: TimelineState[] = [
   },
   {
     year: 1962,
-    image: "/axonometrias/axonometria4.png",
+    image: "/axonometrias/axonometria3.png",
     caption: "From prosperity to obsolescence",
     description:
       "The Halles were designed for one million inhabitants in 1857, but by 1900 Paris already had 2.6 million. The markets became overcrowded, and hygiene standards no longer met the needs of a growing city. In 1962, the city decided to relocate all wholesale trade to Rungis, in a new large-scale logistical complex. This marked beginning of the end of Les Halles as the food centre of Paris and of an uncertain future for the neighbourhood.",
   },
   {
     year: 1971,
-    image: "/axonometrias/axonometria5.png",
+    image: "/axonometrias/axonometria4.png",
     caption: "Demolition",
     description:
       "The relocation to Rungis was done in 1969. Despite protests from citizens, architects, and intellectuals, demolition began in 1971. Only one of the twelve pavilions (number eight) was saved and moved to Nogent-sur-Marne. The rest of the site was razed, leaving a massive empty space in the heart of the capital.",
   },
   {
     year: 1975,
-    image: "/axonometrias/axonometria3.png",
+    image: "/axonometrias/axonometria5.png",
     caption: "The Void",
     description:
       "The destruction created, “the hole of Les Halles.” Beneath this void, the new underground train station for the RER network was being built, opening in 1977. On the surface, nothing remained. The debate over what to build next divided architects, politicians, and citizens for years.",
