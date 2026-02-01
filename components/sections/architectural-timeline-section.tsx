@@ -45,7 +45,7 @@ const timelineStates: TimelineState[] = [
     image: "/axonometrias/axonometria4.png",
     caption: "Demolition",
     description:
-      "The relocation to Rungis was done in 1969. Despite protests from citizens, architects, and intellectuals, demolition began in 1971. Only one of the twelve pavilions (number eight) was saved and moved to Nogent-sur-Marne. The rest of the site was razed, leaving a massive empty space in the heart of the capital.",
+      "Designed for one million inhabitants in 1857, Les Halles rapidly became obsolete as Paris grew to 2.6 million by 1900. Overcrowding and outdated hygiene standards made the markets unsuitable for a modern metropolis. In 1962, the decision was taken to relocate wholesale trade to Rungis, completed in 1969. Despite strong opposition from citizens, architects, and intellectuals, the demolition of the pavilions began in 1971. Only one pavilion was preserved and relocated to Nogent-sur-Marne, while the rest of the site was cleared, leaving a vast void in the centre of Paris.",
   },
   {
     year: 1975,
