@@ -66,7 +66,7 @@ export function PhilosophySection() {
               style={{ opacity: titleOpacity }}
             >
               <h2 className="text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw] text-center px-6">
-                From 1910 to 2026
+                from 1800 to nowadays
               </h2>
             </div>
 
