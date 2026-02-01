@@ -7,13 +7,13 @@ import { useEffect, useRef, useState } from "react";
 
 const sideImages = [
   {
-    src: "/imagenes_extraidas_pdf/img40.jpg",
+    src: "/imagenes_extraidas_pdf/img70.jpg",
     alt: "Louvre Museum Paris",
     position: "left",
     span: 1,
   },
   {
-    src: "/imagenes_extraidas_pdf/img41.jpg",
+    src: "/imagenes_extraidas_pdf/img71.jpg",
     alt: "Sacre Coeur Montmartre",
     position: "left",
     span: 1,
