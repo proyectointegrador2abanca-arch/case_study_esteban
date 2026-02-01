@@ -5,6 +5,7 @@ import { Header } from "@/components/header";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AbstractSection } from "@/components/sections/abstract-section";
 import { ArchitecturalTimelineSection } from "@/components/sections/architectural-timeline-section";
+import { UrbanMorphologySection } from "@/components/sections/urban-morphology-section";
 import { InteractiveMapSection } from "@/components/sections/interactive-map-section";
 import { PhilosophySection } from "@/components/sections/philosophy-section";
 import { FeaturedProductsSection } from "@/components/sections/featured-products-section";
@@ -24,6 +25,7 @@ export default function Home() {
       <ResearchFrameworkSection />
       <GeographicalContextSection />
       <ArchitecturalTimelineSection />
+      <UrbanMorphologySection />
       <InteractiveMapSection />
       <PhilosophySection />
       <FeaturedProductsSection />
