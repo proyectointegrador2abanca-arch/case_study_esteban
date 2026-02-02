@@ -89,21 +89,21 @@ export function ParcelStructureSection() {
                             </div>
                         </div>
 
-                        {/* Pair 4: img89 / img90 */}
+                        {/* Pair 4: img188 / img189 */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img89 */}
+                            {/* Default: img188 */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/img89.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
                                     alt="Parcel Structure View 4A"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
-                            {/* Hover: img90 */}
+                            {/* Hover: img189 */}
                             <div className="absolute inset-0 z-0">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/img90.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img189.jpg"
                                     alt="Parcel Structure View 4B"
                                     fill
                                     className="object-cover"
