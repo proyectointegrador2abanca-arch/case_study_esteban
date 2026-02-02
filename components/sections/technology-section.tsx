@@ -91,7 +91,7 @@ export function TechnologySection() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textProgress, setTextProgress] = useState(0);
 
-  const descriptionText = "Experience outdoor gear reimagined with cutting-edge technology. Alpine & Forest accessories combine ultra-lightweight materials, intelligent temperature control, and weather-resistant engineering to elevate every adventure. From mountain peaks to forest trails, your gear adapts to the conditions.";
+  const descriptionText = "Our analysis highlights two distinct approaches to urban form. The 19th-century market unified the district through a permeable iron grid, whereas the 1970s project layered functions vertically, burying the 'belly of Paris' to create a new, internalized urbanity. This shift marks the transition from the industrial city to the multi-functional metropolis.";
 
   useEffect(() => {
     const handleScroll = () => {
