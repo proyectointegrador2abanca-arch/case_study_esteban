@@ -119,12 +119,12 @@ export function ParcelStructureSection() {
                             </div>
                         </div>
 
-                        {/* Pair 4: img188 / img189 */}
+                        {/* Pair 4: img189 / img190 */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img188 (Before) */}
+                            {/* Default: img189 (Before) */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img189.jpg"
                                     alt="Parcel Structure View 4A"
                                     fill
                                     className="object-cover"
@@ -135,10 +135,10 @@ export function ParcelStructureSection() {
                                     </span>
                                 </div>
                             </div>
-                            {/* Hover: img189 (After) */}
+                            {/* Hover: img190 (After) */}
                             <div className="absolute inset-0 z-0">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img189.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img190.jpg"
                                     alt="Parcel Structure View 4B"
                                     fill
                                     className="object-cover"
