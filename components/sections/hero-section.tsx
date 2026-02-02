@@ -142,7 +142,7 @@ export function HeroSection() {
                   <span className="text-white text-xl md:text-2xl lg:text-3xl font-bold tracking-widest uppercase mb-4 animate-[slideUp_0.8s_ease-out_forwards]">
                     History of Architecture and Heritage
                   </span>
-                  <h1 className="w-full text-[15vw] font-bold leading-[0.8] tracking-tighter text-black text-center">
+                  <h1 className="w-full text-[15vw] font-bold leading-[0.8] tracking-tighter text-white text-center">
                     {"CASE STUDY".split("").map((letter, index) => (
                       <span
                         key={index}
