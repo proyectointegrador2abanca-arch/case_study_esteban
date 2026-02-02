@@ -25,7 +25,7 @@ export function ParcelStructureSection() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
                         {/* Pair 1: img183 / img184 */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img183 */}
+                            {/* Default: img183 (Before) */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg"
@@ -33,8 +33,13 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
+                                </div>
                             </div>
-                            {/* Hover: img184 */}
+                            {/* Hover: img184 (After) */}
                             <div className="absolute inset-0 z-0">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg"
@@ -42,12 +47,17 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
                         {/* Pair 2: img187 / img188 */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img187 */}
+                            {/* Default: img187 (Before) */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
@@ -55,8 +65,13 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
+                                </div>
                             </div>
-                            {/* Hover: img188 */}
+                            {/* Hover: img188 (After) */}
                             <div className="absolute inset-0 z-0">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
@@ -64,34 +79,49 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Pair 3: img185 / img186 */}
+                        {/* Pair 3: img186 / img185 (Swapped: 186 is now Default/Before) */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img185 */}
+                            {/* Default: img186 (Before) */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img185.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img186.jpg"
                                     alt="Parcel Structure View 3A"
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
+                                </div>
                             </div>
-                            {/* Hover: img186 */}
+                            {/* Hover: img185 (After) */}
                             <div className="absolute inset-0 z-0">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img186.jpg"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img185.jpg"
                                     alt="Parcel Structure View 3B"
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
                         {/* Pair 4: img188 / img189 */}
                         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img188 */}
+                            {/* Default: img188 (Before) */}
                             <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
@@ -99,8 +129,13 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
+                                </div>
                             </div>
-                            {/* Hover: img189 */}
+                            {/* Hover: img189 (After) */}
                             <div className="absolute inset-0 z-0">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/img189.jpg"
@@ -108,6 +143,11 @@ export function ParcelStructureSection() {
                                     fill
                                     className="object-cover"
                                 />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
