@@ -38,38 +38,54 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="#abstract"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Abstract
-          </Link>
-          <Link
-            href="#timeline"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Timeline
-          </Link>
-          <Link
-            href="#history"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            History
-          </Link>
-          <Link
-            href="#interviews"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Interviews
-          </Link>
-          <Link
-            href="#credits"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Credits
-          </Link>
-        </nav>
+        <Link
+          href="#research"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Research
+        </Link>
+        <Link
+          href="#architectural-timeline"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Timeline
+        </Link>
+        <Link
+          href="#previous-research"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Previous Research
+        </Link>
+        <Link
+          href="#sources"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Sources
+        </Link>
+        <Link
+          href="#abstract"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Abstract
+        </Link>
+        <Link
+          href="#history"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          History
+        </Link>
+        <Link
+          href="#interviews"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Interviews
+        </Link>
+        <Link
+          href="#credits"
+          className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+        >
+          Credits
+        </Link>
 
         {/* Mobile Menu Button */}
         <button

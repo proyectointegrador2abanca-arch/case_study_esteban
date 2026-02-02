@@ -2,7 +2,7 @@
 
 export function ResearchFrameworkSection() {
     return (
-        <section className="bg-background py-24 px-6 md:px-12 lg:px-20 border-t border-border/40">
+        <section id="research" className="bg-background py-24 px-6 md:px-12 lg:px-20 border-t border-border/40">
             <div className="mx-auto max-w-4xl space-y-16">
 
                 {/* Research Question */}

@@ -64,7 +64,7 @@ export function SourcesSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="bg-background py-20 px-6 md:px-12 lg:px-20 border-t border-border/40">
+        <section id="sources" ref={sectionRef} className="bg-background py-20 px-6 md:px-12 lg:px-20 border-t border-border/40">
             <div className="mx-auto max-w-5xl">
                 <h2
                     className={`text-3xl font-medium tracking-tight text-foreground mb-12 transition-all duration-1000 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"

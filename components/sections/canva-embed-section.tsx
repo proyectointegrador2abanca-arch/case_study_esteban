@@ -2,7 +2,7 @@
 
 export function CanvaEmbedSection() {
     return (
-        <section className="relative w-full bg-background py-10 px-6 md:px-12 lg:px-20">
+        <section id="previous-research" className="relative w-full bg-background py-10 px-6 md:px-12 lg:px-20">
             <div
                 className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border"
                 style={{
