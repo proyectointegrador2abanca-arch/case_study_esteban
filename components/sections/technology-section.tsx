@@ -210,9 +210,9 @@ export function TechnologySection() {
                 className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
               >
                 <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
-                  {["Technology", "Meets", "Wilderness."].map((word, index) => {
+                  {["Urban", "Heritage", "&", "Transformation."].map((word, index) => {
                     // Each word fades out sequentially based on scrollProgress
-                    const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
+                    const wordFadeStart = index * 0.05; // Slightly faster for 4 words
                     const wordFadeEnd = wordFadeStart + 0.07;
                     const wordProgress = Math.max(0, Math.min(1, (scrollProgress - wordFadeStart) / (wordFadeEnd - wordFadeStart)));
                     const wordOpacity = 1 - wordProgress;
@@ -226,7 +226,7 @@ export function TechnologySection() {
                           opacity: wordOpacity,
                           filter: `blur(${wordBlur}px)`,
                           transition: 'opacity 0.1s linear, filter 0.1s linear',
-                          marginRight: index < 2 ? '0.3em' : '0',
+                          marginRight: index < 3 ? '0.3em' : '0',
                         }}
                       >
                         {word}

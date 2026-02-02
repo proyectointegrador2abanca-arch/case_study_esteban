@@ -127,11 +127,10 @@ export function PhilosophySection() {
       <div className="px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-36 lg:pb-14">
         <div className="text-center">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
-            First generation
+            Urban Evolution
           </p>
           <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
-            Alpine & Forest are high-tech outdoor accessories designed for modern adventurers.
-            Lightweight, durable, and engineered for extreme conditions.
+            From the 19th-century industrial market to the modern underground forum, Les Halles represents the shifting visions of Paris.
           </p>
         </div>
       </div>
