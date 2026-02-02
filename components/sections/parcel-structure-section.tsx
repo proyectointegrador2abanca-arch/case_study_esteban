@@ -14,21 +14,106 @@ export function ParcelStructureSection() {
                     </h2>
                 </div>
 
-                {/* Subsection 1 */}
-                <div className="space-y-8">
-                    <div className="text-center">
+                {/* Subsection 1: Parcel structure */}
+                <div className="space-y-6">
+                    <div className="text-center space-y-2">
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             1. Parcel structure
                         </p>
                     </div>
-                    <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50">
-                        <Image
-                            src="/imagenes_extraidas_pdf/img113.jpg"
-                            alt="Parcel structure analysis"
-                            fill
-                            className="object-cover"
-                        />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
+                        {/* Pair 1: img183 / img184 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img183 */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg"
+                                    alt="Parcel Structure View 1A"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            {/* Hover: img184 */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg"
+                                    alt="Parcel Structure View 1B"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Pair 2: img187 / img188 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img187 */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
+                                    alt="Parcel Structure View 2A"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            {/* Hover: img188 */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
+                                    alt="Parcel Structure View 2B"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Pair 3: img185 / img186 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img185 */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img185.jpg"
+                                    alt="Parcel Structure View 3A"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            {/* Hover: img186 */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img186.jpg"
+                                    alt="Parcel Structure View 3B"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Pair 4: img89 / img90 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img89 */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/img89.jpg"
+                                    alt="Parcel Structure View 4A"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            {/* Hover: img90 */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/img90.jpg"
+                                    alt="Parcel Structure View 4B"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
                     </div>
+                    <p className="text-center text-xs text-muted-foreground mt-4">
+                        Hover over the images to compare
+                    </p>
                 </div>
 
                 {/* Subsection 2 */}
