@@ -13,7 +13,7 @@ export function DetailedCaseStudySection() {
                         CASE STUDY
                     </span>
                     <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground md:text-5xl leading-tight">
-                        History of Architecture and Heritage
+                        Previous research
                     </h2>
                     <div className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto space-y-6 text-center">
                         <p className="font-medium text-foreground">
