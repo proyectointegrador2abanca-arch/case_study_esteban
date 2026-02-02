@@ -64,6 +64,12 @@ export function Header() {
             Sources
           </Link>
           <Link
+            href="#interactive-analysis"
+            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+          >
+            Interactive Analysis
+          </Link>
+          <Link
             href="#abstract"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >

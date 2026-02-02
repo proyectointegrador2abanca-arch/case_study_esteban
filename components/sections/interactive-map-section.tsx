@@ -38,7 +38,7 @@ const hotspots = [
 
 export function InteractiveMapSection() {
     return (
-        <section className="bg-background py-20 px-6 md:px-12 lg:px-20 overflow-hidden">
+        <section id="interactive-analysis" className="bg-background py-20 px-6 md:px-12 lg:px-20 overflow-hidden">
             <div className="mx-auto max-w-7xl">
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">
