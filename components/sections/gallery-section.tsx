@@ -53,8 +53,18 @@ export function GallerySection() {
       src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg",
       alt: "Conclusion 10",
     },
-    { src: "/images/bottle-mountain.png", alt: "Thermal bottle on mountain" },
-    { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
+    {
+      src: "/imagenes_extraidas_pdf/img94.jpg",
+      alt: "Historical Maps Analysis",
+      title: "Historical Maps",
+      category: "Cartography",
+    },
+    {
+      src: "/imagenes_extraidas_pdf/img95.jpg",
+      alt: "Urban Fabric Evolution",
+      title: "Urban Fabric",
+      category: "Morphology",
+    },
   ];
 
   // Calculate section height based on content width
