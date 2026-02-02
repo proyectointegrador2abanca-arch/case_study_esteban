@@ -12,8 +12,7 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/images/bottle-bike.png", alt: "Thermal bottle on bike" },
-    { src: "/images/bottle-lake.png", alt: "Thermal bottle by lake" },
+
     {
       src: "/imagenes_extraidas_pdf/imagenes_2_diapo/img166.jpg",
       alt: "Conclusion 1",
