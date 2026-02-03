@@ -14,35 +14,90 @@ const axonometryImages = [
         src: "/axonometrias/axonometria0.png",
         alt: "Axonometry 0: Urban Context",
         hotspots: [
-            { id: 1, top: "40%", left: "50%", title: "Context Overview", description: "Integration with the surrounding urban fabric." }
+            {
+                id: 1,
+                // 662, 274
+                top: "49%",
+                left: "66%",
+                title: "Pre-Haussmann Era",
+                description: `Population boom → hygiene crisis
+Medieval streets, vernacular housing
+First reconstruction plans: limited by cost`,
+                images: ["/imagenes_extraidas_pdf/img57.jpg"]
+            }
         ]
     },
     {
         src: "/axonometrias/axonometria2.png",
         alt: "Axonometry 2: Structural Grid",
         hotspots: [
-            { id: 2, top: "50%", left: "40%", title: "Structural Grid", description: "The underlying structural system of the intervention." }
+            {
+                id: 2,
+                // 392, 344
+                top: "61%",
+                left: "39%",
+                title: "The Baltard Pavilions",
+                description: `1851 – Victor Baltard commissioned
+1853 – Iron & glass system (after rejection of stone)
+12 pavilions built → completed end of 19th century
+Gas lighting • steel structure • ventilation
+Described by Zola (Le Ventre de Paris, 1873)`,
+                images: [
+                    "/imagenes_extraidas_pdf/img64.jpg",
+                    "/imagenes_extraidas_pdf/img72.jpg",
+                    "/imagenes_extraidas_pdf/img73.jpg"
+                ]
+            }
         ]
     },
     {
         src: "/axonometrias/axonometria3.png",
         alt: "Axonometry 3: Circulation",
         hotspots: [
-            { id: 3, top: "30%", left: "60%", title: "Circulation Flows", description: "Pedestrian and transport circulation analysis." }
+            {
+                id: 3,
+                // 649, 337
+                top: "60%",
+                left: "65%",
+                title: "Rise and Fall",
+                description: `1857: 1 million inhabitants
+1900: 2,6 million inhabitants
+1969 – Rungis completed
+1971 – Demolition begins
+1 pavilion saved (No. 8 → Nogent-sur-Marne)
+1971–1977 – Empty site
+1977 – RER station opens`,
+                images: []
+            }
         ]
     },
     {
         src: "/axonometrias/axonometria4.png",
         alt: "Axonometry 4: Underground Layers",
         hotspots: [
-            { id: 4, top: "60%", left: "30%", title: "Underground Levels", description: "Complex stratification of underground levels." }
+            {
+                id: 4,
+                // 680, 518
+                top: "92%",
+                left: "68%",
+                title: "Underground Development",
+                description: "Expansion of the underground transport network and commercial spaces.",
+                images: ["/imagenes_extraidas_pdf/img89.jpg"]
+            }
         ]
     },
     {
         src: "/axonometrias/axonometria5.png",
         alt: "Axonometry 5: Surface Connections",
         hotspots: [
-            { id: 5, top: "20%", left: "70%", title: "Surface Connections", description: "Points of connection between surface and underground." }
+            {
+                id: 5,
+                top: "20%",
+                left: "70%",
+                title: "Surface Connections",
+                description: "Points of connection between surface and underground.",
+                images: []
+            }
         ]
     },
 ];
@@ -83,11 +138,42 @@ export function InteractiveMapSection() {
                                                 <Info size={14} />
                                             </button>
                                         </HoverCardTrigger>
-                                        <HoverCardContent className="w-64 p-4 border-border bg-popover shadow-xl z-50">
-                                            <h4 className="text-sm font-semibold mb-1">{spot.title}</h4>
-                                            <p className="text-xs text-muted-foreground leading-relaxed">
-                                                {spot.description}
-                                            </p>
+                                        <HoverCardContent className="w-80 p-0 overflow-hidden border-border bg-popover shadow-xl z-50">
+                                            {spot.images && spot.images.length > 0 && (
+                                                <div className="relative w-full aspect-video bg-muted">
+                                                    {/* Simple Grid if multiple images, otherwise single */}
+                                                    {spot.images.length === 1 ? (
+                                                        <Image
+                                                            src={spot.images[0]}
+                                                            alt={spot.title}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    ) : (
+                                                        <div className="grid grid-cols-2 h-full w-full">
+                                                            {spot.images.slice(0, 4).map((img, i) => (
+                                                                <div key={i} className="relative h-full w-full border-[0.5px] border-border/20">
+                                                                    <Image
+                                                                        src={img}
+                                                                        alt={`${spot.title} ${i + 1}`}
+                                                                        fill
+                                                                        className="object-cover"
+                                                                    />
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )}
+
+                                            <div className="p-4">
+                                                <h4 className="text-sm font-semibold mb-2">{spot.title}</h4>
+                                                <div className="text-xs text-muted-foreground leading-relaxed space-y-1">
+                                                    {spot.description.split('\n').map((line, i) => (
+                                                        <p key={i}>{line}</p>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </HoverCardContent>
                                     </HoverCard>
                                 ))}
