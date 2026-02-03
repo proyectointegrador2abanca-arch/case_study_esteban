@@ -156,40 +156,69 @@ export function ParcelStructureSection() {
                     </p>
                 </div>
 
-                {/* Subsection 2 */}
+                {/* Subsection 2: Block typology */}
                 <div className="space-y-8 pt-8 border-t border-border/20">
                     <div className="text-center">
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             2. Block typology & inner space
                         </p>
                     </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Comparison 1: 35 vs 36 */}
                         <div className="space-y-2">
-                            <div className="relative aspect-square w-full rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img114.jpg"
-                                    alt="Before Haussmann Block"
-                                    fill
-                                    className="object-cover"
-                                />
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                                {/* Default: 35 (Before/Base) */}
+                                <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/images/35.png"
+                                        alt="Block Typology View 1 Base"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                {/* Hover: 36 (After/Overlay) */}
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/images/36.png"
+                                        alt="Block Typology View 1 Overlay"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
                             </div>
-                            <p className="text-center text-xs text-muted-foreground">Comparison between before Haussmann</p>
+                            <p className="text-center text-xs text-muted-foreground">
+                                Hover to compare
+                            </p>
                         </div>
+
+                        {/* Comparison 2: 37 vs 38 */}
                         <div className="space-y-2">
-                            <div className="relative aspect-square w-full rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img120.jpg"
-                                    alt="After Haussmann Block"
-                                    fill
-                                    className="object-cover"
-                                />
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                                {/* Default: 37 (Before/Base) */}
+                                <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/images/37.png"
+                                        alt="Block Typology View 2 Base"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                {/* Hover: 38 (After/Overlay) */}
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/images/38.png"
+                                        alt="Block Typology View 2 Overlay"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
                             </div>
-                            <p className="text-center text-xs text-muted-foreground">Comparison after Haussmann</p>
+                            <p className="text-center text-xs text-muted-foreground">
+                                Hover to compare
+                            </p>
                         </div>
                     </div>
-                    <p className="text-center text-muted-foreground mt-4">
-                        Need to redo it to show the difference in term ft f
-                    </p>
                 </div>
 
                 {/* Subsection 3 */}
