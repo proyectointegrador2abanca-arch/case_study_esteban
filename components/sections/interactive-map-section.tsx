@@ -92,11 +92,21 @@ Described by Zola (Le Ventre de Paris, 1873)`,
         hotspots: [
             {
                 id: 5,
-                top: "20%",
-                left: "70%",
-                title: "Surface Connections",
-                description: "Points of connection between surface and underground.",
-                images: []
+                // 556, 390 (1154x671)
+                top: "58.12%",
+                left: "48.18%",
+                title: "Housing on Rue Berger",
+                description: "Housing on Rue Berger, APUR, 1985",
+                images: ["/imagenes_extraidas_pdf/img105.jpg"]
+            },
+            {
+                id: 6,
+                // 715, 270 (1154x671)
+                top: "40.24%",
+                left: "61.96%",
+                title: "Social Housing on Rue Rambuteau",
+                description: "Social housing on Rue Rambuteau, APUR, 1985",
+                images: ["/imagenes_extraidas_pdf/img106.jpg"]
             }
         ]
     },
@@ -138,7 +148,7 @@ export function InteractiveMapSection() {
                                                 <Info size={14} />
                                             </button>
                                         </HoverCardTrigger>
-                                        <HoverCardContent className="w-80 p-0 overflow-hidden border-border bg-popover shadow-xl z-50">
+                                        <HoverCardContent className="w-[32rem] p-0 overflow-hidden border-border bg-popover shadow-xl z-50">
                                             {spot.images && spot.images.length > 0 && (
                                                 <div className="relative w-full aspect-video bg-muted">
                                                     {/* Simple Grid if multiple images, otherwise single */}
@@ -166,9 +176,9 @@ export function InteractiveMapSection() {
                                                 </div>
                                             )}
 
-                                            <div className="p-4">
-                                                <h4 className="text-sm font-semibold mb-2">{spot.title}</h4>
-                                                <div className="text-xs text-muted-foreground leading-relaxed space-y-1">
+                                            <div className="p-6">
+                                                <h4 className="text-lg font-semibold mb-3">{spot.title}</h4>
+                                                <div className="text-base text-muted-foreground leading-relaxed space-y-1">
                                                     {spot.description.split('\n').map((line, i) => (
                                                         <p key={i}>{line}</p>
                                                     ))}
