@@ -29,6 +29,17 @@ export function HeritageSection() {
                             height={1080}
                             className="w-full h-auto object-contain"
                         />
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-center">
+                            <p className="text-xs text-muted-foreground">
+                                St Eustache on the Turgot plan, David Rumsey Collection, 1736-1739
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                                St Eustache from rue Rambuteau, Gallica, 1926
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                                St Eustache from rue Rambuteau, google maps, 2009
+                            </p>
+                        </div>
                     </div>
                 </div>
 
