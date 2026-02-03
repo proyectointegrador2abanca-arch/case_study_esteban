@@ -1,4 +1,5 @@
 import { ResearchFrameworkSection } from "@/components/sections/research-framework-section";
+import { AnnexesSection } from "@/components/sections/annexes-section";
 import { GeographicalContextSection } from "@/components/sections/geographical-context-section";
 
 import { Header } from "@/components/header";
@@ -39,6 +40,7 @@ export default function Home() {
       <GallerySection />
       <CanvaEmbedSection />
       <DetailedCaseStudySection />
+      <AnnexesSection />
       <SourcesSection />
       <FooterSection />
     </main>
