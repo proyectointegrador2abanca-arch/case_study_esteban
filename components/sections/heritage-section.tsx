@@ -21,29 +21,14 @@ export function HeritageSection() {
                             1. Saint-Eustache as constant
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="space-y-2">
-                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img127.jpg"
-                                    alt="St Eustache 1926"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                            <p className="text-center text-xs text-muted-foreground">St Eustache from rue Rambuteau, Gallica, 1926</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img128.jpg"
-                                    alt="St Eustache 2009"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                            <p className="text-center text-xs text-muted-foreground">St Eustache from rue Rambuteau, google maps, 2009</p>
-                        </div>
+                    <div className="w-full mt-8">
+                        <Image
+                            src="/imagenes_extraidas_pdf/images/41.png"
+                            alt="Saint-Eustache as constant"
+                            width={1920}
+                            height={1080}
+                            className="w-full h-auto object-contain"
+                        />
                     </div>
                 </div>
 
