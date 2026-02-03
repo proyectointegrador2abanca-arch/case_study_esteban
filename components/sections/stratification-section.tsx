@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { LayerStack } from "@/components/ui/layer-stack";
 
 export function StratificationSection() {
     return (
@@ -21,20 +22,17 @@ export function StratificationSection() {
                             1. Haussmann: surface-based city
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/img104.jpg"
-                                alt="Haussman plan 3D"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                        <div className="text-center md:text-left space-y-4">
-                            <p className="text-muted-foreground">
-                                Exploded 3D of Haussman plan showing presence of underground even if really limited (not definitif)
-                            </p>
-                        </div>
+                    <div className="w-full">
+                        <LayerStack
+                            layers={[
+                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa1.png", alt: "Layer 1: Underground Base", label: "Layer 1: Underground Base" },
+                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa2.png", alt: "Layer 2: Structural Grid", label: "Layer 2: Structural Grid" },
+                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa3.png", alt: "Layer 3: Surface Integration", label: "Layer 3: Surface Integration" },
+                            ]}
+                        />
+                        <p className="mt-4 text-center text-sm text-muted-foreground">
+                            Exploded 3D of Haussman plan showing stratification of layers.
+                        </p>
                     </div>
                 </div>
 
