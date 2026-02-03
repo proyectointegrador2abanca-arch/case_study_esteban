@@ -167,7 +167,7 @@ export function ParcelStructureSection() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Comparison 1: 35 vs 36 */}
                         <div className="space-y-2">
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl group">
                                 {/* Default: 35 (Before/Base) */}
                                 <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                     <Image
@@ -194,7 +194,7 @@ export function ParcelStructureSection() {
 
                         {/* Comparison 2: 37 vs 38 */}
                         <div className="space-y-2">
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl group">
                                 {/* Default: 37 (Before/Base) */}
                                 <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                     <Image
