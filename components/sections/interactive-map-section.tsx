@@ -16,9 +16,9 @@ const axonometryImages = [
         hotspots: [
             {
                 id: 1,
-                // 662, 274
-                top: "49%",
-                left: "66%",
+                // 662, 274 (1135x650)
+                top: "42.15%",
+                left: "58.33%",
                 title: "Pre-Haussmann Era",
                 description: `Population boom → hygiene crisis
 Medieval streets, vernacular housing
@@ -33,9 +33,9 @@ First reconstruction plans: limited by cost`,
         hotspots: [
             {
                 id: 2,
-                // 392, 344
-                top: "61%",
-                left: "39%",
+                // 392, 344 (1155x671)
+                top: "51.26%",
+                left: "33.94%",
                 title: "The Baltard Pavilions",
                 description: `1851 – Victor Baltard commissioned
 1853 – Iron & glass system (after rejection of stone)
@@ -56,9 +56,9 @@ Described by Zola (Le Ventre de Paris, 1873)`,
         hotspots: [
             {
                 id: 3,
-                // 649, 337
-                top: "60%",
-                left: "65%",
+                // 649, 337 (1156x671)
+                top: "50.22%",
+                left: "56.14%",
                 title: "Rise and Fall",
                 description: `1857: 1 million inhabitants
 1900: 2,6 million inhabitants
@@ -77,9 +77,9 @@ Described by Zola (Le Ventre de Paris, 1873)`,
         hotspots: [
             {
                 id: 4,
-                // 680, 518
-                top: "92%",
-                left: "68%",
+                // 680, 518 (1158x671)
+                top: "77.19%",
+                left: "58.72%",
                 title: "Underground Development",
                 description: "Expansion of the underground transport network and commercial spaces.",
                 images: ["/imagenes_extraidas_pdf/img89.jpg"]
