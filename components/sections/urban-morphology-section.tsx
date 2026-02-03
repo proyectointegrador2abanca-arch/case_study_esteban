@@ -84,7 +84,7 @@ export function UrbanMorphologySection() {
                         {/* Default: After Forum (Placeholder) */}
                         <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                             <Image
-                                src="/imagenes_extraidas_pdf/img100.jpg"
+                                src="/imagenes_extraidas_pdf/imagenes_2_diapo/colores2.png"
                                 alt="3D after Forum"
                                 fill
                                 className="object-cover"
@@ -99,7 +99,7 @@ export function UrbanMorphologySection() {
                         {/* Hover: Before Forum (Placeholder) */}
                         <div className="absolute inset-0 z-0">
                             <Image
-                                src="/imagenes_extraidas_pdf/img101.jpg"
+                                src="/imagenes_extraidas_pdf/imagenes_2_diapo/colores1.png"
                                 alt="3D before Forum"
                                 fill
                                 className="object-cover"
