@@ -8,6 +8,17 @@ import {
 } from "@/components/ui/hover-card";
 import { Info } from "lucide-react";
 
+// Data for chronology
+const chronologyText = [
+    "1857: 1 million inhabitants",
+    "1900: 2,6 million inhabitants",
+    "1969 – Rungis completed",
+    "1971 – Demolition begins",
+    "1 pavilion saved (No. 8 → Nogent-sur-Marne)",
+    "1971–1977 – Empty site",
+    "1977 – RER station opens"
+];
+
 // Data for the 5 stacked axonometries
 const axonometryImages = [
     {
@@ -60,14 +71,8 @@ Described by Zola (Le Ventre de Paris, 1873)`,
                 top: "50.22%",
                 left: "56.14%",
                 title: "Rise and Fall",
-                description: `1857: 1 million inhabitants
-1900: 2,6 million inhabitants
-1969 – Rungis completed
-1971 – Demolition begins
-1 pavilion saved (No. 8 → Nogent-sur-Marne)
-1971–1977 – Empty site
-1977 – RER station opens`,
-                images: []
+                description: "Demolition of the pavilions ,from the book Les fantômes des Halles, 2004.",
+                images: ["/imagenes_extraidas_pdf/img83.jpg"]
             }
         ]
     },
@@ -81,7 +86,7 @@ Described by Zola (Le Ventre de Paris, 1873)`,
                 top: "77.19%",
                 left: "58.72%",
                 title: "Underground Development",
-                description: "Expansion of the underground transport network and commercial spaces.",
+                description: "Foutain of Innocents suspended in “hole of Les Halles”, 1973",
                 images: ["/imagenes_extraidas_pdf/img89.jpg"]
             }
         ]
@@ -127,67 +132,80 @@ export function InteractiveMapSection() {
 
                 <div className="space-y-12">
                     {axonometryImages.map((axono, index) => (
-                        <div key={index} className="relative w-full rounded-2xl overflow-hidden border border-border/50 bg-secondary/10 shadow-sm">
-                            <div className="relative aspect-[16/9] w-full">
-                                <Image
-                                    src={axono.src}
-                                    alt={axono.alt}
-                                    fill
-                                    className="object-contain"
-                                />
+                        <div key={index}>
+                            <div className="relative w-full rounded-2xl overflow-hidden border border-border/50 bg-secondary/10 shadow-sm">
+                                <div className="relative aspect-[16/9] w-full">
+                                    <Image
+                                        src={axono.src}
+                                        alt={axono.alt}
+                                        fill
+                                        className="object-contain"
+                                    />
 
-                                {/* Hotspots */}
-                                {axono.hotspots.map((spot) => (
-                                    <HoverCard key={spot.id}>
-                                        <HoverCardTrigger asChild>
-                                            <button
-                                                className="absolute h-6 w-6 -ml-3 -mt-3 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer z-10 animate-pulse hover:animate-none ring-2 ring-background"
-                                                style={{ top: spot.top, left: spot.left }}
-                                                aria-label={`View details for ${spot.title}`}
-                                            >
-                                                <Info size={14} />
-                                            </button>
-                                        </HoverCardTrigger>
-                                        <HoverCardContent className="w-[32rem] p-0 overflow-hidden border-border bg-popover shadow-xl z-50">
-                                            {spot.images && spot.images.length > 0 && (
-                                                <div className="relative w-full aspect-video bg-muted">
-                                                    {/* Simple Grid if multiple images, otherwise single */}
-                                                    {spot.images.length === 1 ? (
-                                                        <Image
-                                                            src={spot.images[0]}
-                                                            alt={spot.title}
-                                                            fill
-                                                            className="object-cover"
-                                                        />
-                                                    ) : (
-                                                        <div className="grid grid-cols-2 h-full w-full">
-                                                            {spot.images.slice(0, 4).map((img, i) => (
-                                                                <div key={i} className="relative h-full w-full border-[0.5px] border-border/20">
-                                                                    <Image
-                                                                        src={img}
-                                                                        alt={`${spot.title} ${i + 1}`}
-                                                                        fill
-                                                                        className="object-cover"
-                                                                    />
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            )}
+                                    {/* Hotspots */}
+                                    {axono.hotspots.map((spot) => (
+                                        <HoverCard key={spot.id}>
+                                            <HoverCardTrigger asChild>
+                                                <button
+                                                    className="absolute h-6 w-6 -ml-3 -mt-3 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer z-10 animate-pulse hover:animate-none ring-2 ring-background"
+                                                    style={{ top: spot.top, left: spot.left }}
+                                                    aria-label={`View details for ${spot.title}`}
+                                                >
+                                                    <Info size={14} />
+                                                </button>
+                                            </HoverCardTrigger>
+                                            <HoverCardContent className="w-[32rem] p-0 overflow-hidden border-border bg-popover shadow-xl z-50">
+                                                {spot.images && spot.images.length > 0 && (
+                                                    <div className="relative w-full aspect-video bg-muted">
+                                                        {/* Simple Grid if multiple images, otherwise single */}
+                                                        {spot.images.length === 1 ? (
+                                                            <Image
+                                                                src={spot.images[0]}
+                                                                alt={spot.title}
+                                                                fill
+                                                                className="object-cover"
+                                                            />
+                                                        ) : (
+                                                            <div className="grid grid-cols-2 h-full w-full">
+                                                                {spot.images.slice(0, 4).map((img, i) => (
+                                                                    <div key={i} className="relative h-full w-full border-[0.5px] border-border/20">
+                                                                        <Image
+                                                                            src={img}
+                                                                            alt={`${spot.title} ${i + 1}`}
+                                                                            fill
+                                                                            className="object-cover"
+                                                                        />
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                )}
 
-                                            <div className="p-6">
-                                                <h4 className="text-lg font-semibold mb-3">{spot.title}</h4>
-                                                <div className="text-base text-muted-foreground leading-relaxed space-y-1">
-                                                    {spot.description.split('\n').map((line, i) => (
-                                                        <p key={i}>{line}</p>
-                                                    ))}
+                                                <div className="p-6">
+                                                    <h4 className="text-lg font-semibold mb-3">{spot.title}</h4>
+                                                    <div className="text-base text-muted-foreground leading-relaxed space-y-1">
+                                                        {spot.description.split('\n').map((line, i) => (
+                                                            <p key={i}>{line}</p>
+                                                        ))}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </HoverCardContent>
-                                    </HoverCard>
-                                ))}
+                                            </HoverCardContent>
+                                        </HoverCard>
+                                    ))}
+                                </div>
                             </div>
+
+                            {/* Chronology Text between Axon 3 (index 2) and Axon 4 (index 3) */}
+                            {index === 2 && (
+                                <div className="py-12 px-8 max-w-2xl mx-auto text-center">
+                                    <div className="space-y-2 text-muted-foreground font-medium text-lg border-l-2 border-primary/20 pl-6 text-left">
+                                        {chronologyText.map((line, i) => (
+                                            <p key={i}>{line}</p>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
