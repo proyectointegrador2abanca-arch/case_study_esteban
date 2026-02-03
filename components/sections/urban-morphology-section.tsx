@@ -114,6 +114,17 @@ export function UrbanMorphologySection() {
                     <p className="text-center text-xs text-muted-foreground">
                         Hover over the image to compare
                     </p>
+
+                    {/* Additional Image: arriba_colores.png */}
+                    <div className="relative w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm mt-8">
+                        <Image
+                            src="/imagenes_extraidas_pdf/imagenes_2_diapo/arriba_colores.png"
+                            alt="Forum Transformation Details"
+                            width={1920}
+                            height={1080}
+                            className="w-full h-auto object-contain"
+                        />
+                    </div>
                 </div>
 
                 {/* Subsection 3: Findings */}
