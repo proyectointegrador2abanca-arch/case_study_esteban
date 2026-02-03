@@ -37,10 +37,10 @@ export default function Home() {
       <PhilosophySection />
       <FeaturedProductsSection />
       <TechnologySection />
+      <AnnexesSection />
       <GallerySection />
       <CanvaEmbedSection />
       <DetailedCaseStudySection />
-      <AnnexesSection />
       <SourcesSection />
       <FooterSection />
     </main>
