@@ -51,12 +51,13 @@ export function GeographicalContextSection() {
 
                 {/* Large Context Image */}
                 <div className="mt-12 space-y-4 group">
-                    <div className="relative aspect-video w-full overflow-hidden rounded-2xl">
+                    <div className="relative w-full overflow-hidden rounded-2xl">
                         <Image
                             src="/imagenes_extraidas_pdf/imagenes_2_diapo/context_3.png"
                             alt="Detailed Geographical Context"
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            width={1920}
+                            height={1080}
+                            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                     </div>
                 </div>
