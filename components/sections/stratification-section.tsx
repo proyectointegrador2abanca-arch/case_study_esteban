@@ -128,6 +128,35 @@ export function StratificationSection() {
                         <p className="mt-4 text-center text-sm text-muted-foreground">
                             Interactive stratification of the Forum des Halles levels. Use arrows to explore.
                         </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                            <div className="space-y-3">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/captura3.png"
+                                        alt="Sectional perspective of the railway station"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="text-xs text-center text-muted-foreground italic max-w-sm mx-auto">
+                                    Sectional perspective of the railway station Source: Paris Projet, no. 8, Aménagement urbanisme avenir, APUR, Paris, 1972
+                                </p>
+                            </div>
+                            <div className="space-y-3">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/captura4.png"
+                                        alt="East section of the Forum des Halles"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="text-xs text-center text-muted-foreground italic max-w-sm mx-auto">
+                                    East section of the Forum des Halles, 1972
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
