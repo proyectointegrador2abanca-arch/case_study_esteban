@@ -161,6 +161,22 @@ export function ParcelStructureSection() {
                     <p className="text-center text-xs text-muted-foreground mt-4">
                         Hover over the images to compare
                     </p>
+                    <div className="max-w-4xl mx-auto pt-8">
+                        <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Small plots merged into larger parcels</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Façades widen, uses become fewer</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Progressive loss of functional diversity</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Subsection 2: Block typology */}
@@ -232,6 +248,27 @@ export function ParcelStructureSection() {
                                 Hover to compare
                             </p>
                         </div>
+                    </div>
+
+                    <div className="max-w-4xl mx-auto pt-8">
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Height remains the same</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Fewer courtyards, less porosity</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Haussmann blocks still face the street</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Forum blocks turn inward</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
