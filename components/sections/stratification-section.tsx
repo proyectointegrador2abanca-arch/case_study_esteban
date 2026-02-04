@@ -113,21 +113,33 @@ export function StratificationSection() {
                         </div>
                     </div>
 
-                    <div className="w-full max-w-4xl mx-auto">
-                        <LayerStack
-                            layers={[
-                                { src: "/capas/SUB 7-1.png", alt: "Level -7", label: "Level -7: Lowest Level" },
-                                { src: "/capas/SUB 6-1.png", alt: "Level -6", label: "Level -6: Transport" },
-                                { src: "/capas/SUB 5-1.png", alt: "Level -5", label: "Level -5: Interchange" },
-                                { src: "/capas/SUB4-1.png", alt: "Level -4", label: "Level -4: Metro/RER" },
-                                { src: "/capas/SUB3-1.png", alt: "Level -3", label: "Level -3: Commercial" },
-                                { src: "/capas/SUB 2-1.png", alt: "Level -2", label: "Level -2: Forum Access" },
-                                { src: "/capas/1,SUB-1.png", alt: "Level -1", label: "Level -1: Ground/Mezzanine" },
-                            ]}
-                        />
-                        <p className="mt-4 text-center text-sm text-muted-foreground">
-                            Interactive stratification of the Forum des Halles levels. Use arrows to explore.
-                        </p>
+                    <div className="w-full max-w-7xl mx-auto">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+                            <div>
+                                <LayerStack
+                                    layers={[
+                                        { src: "/capas/SUB 7-1.png", alt: "Level -7", label: "Level -7: Lowest Level" },
+                                        { src: "/capas/SUB 6-1.png", alt: "Level -6", label: "Level -6: Transport" },
+                                        { src: "/capas/SUB 5-1.png", alt: "Level -5", label: "Level -5: Interchange" },
+                                        { src: "/capas/SUB4-1.png", alt: "Level -4", label: "Level -4: Metro/RER" },
+                                        { src: "/capas/SUB3-1.png", alt: "Level -3", label: "Level -3: Commercial" },
+                                        { src: "/capas/SUB 2-1.png", alt: "Level -2", label: "Level -2: Forum Access" },
+                                        { src: "/capas/1,SUB-1.png", alt: "Level -1", label: "Level -1: Ground/Mezzanine" },
+                                    ]}
+                                />
+                                <p className="mt-4 text-center text-sm text-muted-foreground">
+                                    Interactive stratification of the Forum des Halles levels. Use arrows to explore.
+                                </p>
+                            </div>
+                            <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-secondary/5 border border-border/50 shadow-sm">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/7capas_imagen:completa.png"
+                                    alt="Complete stratification visualization"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
 
                         <div className="max-w-4xl mx-auto bg-secondary/5 rounded-2xl p-8 border border-border/50 mt-12">
                             <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
