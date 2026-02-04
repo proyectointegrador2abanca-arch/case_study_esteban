@@ -142,6 +142,11 @@ export function InteractiveMapSection() {
                 <div className="space-y-12">
                     {axonometryImages.map((axono, index) => (
                         <div key={index}>
+                            {index === 0 && (
+                                <h3 className="text-xl font-medium text-foreground mb-6 text-center">
+                                    Organic urban fabric and dispersed markets before Haussmann (1800–1850)
+                                </h3>
+                            )}
                             <div className="relative w-full rounded-2xl overflow-hidden border border-border/50 bg-secondary/10 shadow-sm">
                                 <div className="relative aspect-[16/9] w-full">
                                     <Image
