@@ -115,7 +115,7 @@ export function StratificationSection() {
 
                     <div className="w-full max-w-7xl mx-auto">
                         {/* Interactive Layer Stack */}
-                        <div className="w-full max-w-4xl mx-auto mb-16">
+                        <div className="w-full max-w-5xl mx-auto mb-16">
                             <LayerStack
                                 layers={[
                                     { src: "/capas/SUB 7-1.png", alt: "Level -7", label: "Level -7: Lowest Level" },
