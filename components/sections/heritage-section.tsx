@@ -72,6 +72,22 @@ export function HeritageSection() {
                             height={1080}
                             className="w-full h-auto object-contain"
                         />
+                        <div className="max-w-4xl mx-auto pt-8">
+                            <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Increasing control over urban form</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Reduced adaptability of blocks</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Decline of everyday urban richness</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
