@@ -141,25 +141,19 @@ export function StratificationSection() {
                             </div>
                         </div>
 
-                        <div className="max-w-4xl mx-auto bg-secondary/5 rounded-2xl p-8 border border-border/50 mt-12">
-                            <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <li className="flex flex-col items-center text-center gap-2">
-                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
-                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
-                                    </div>
-                                    <p className="text-lg text-foreground font-medium leading-snug">Vertical separation of functions</p>
+                        <div className="max-w-4xl mx-auto mt-12">
+                            <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Vertical separation of functions</p>
                                 </li>
-                                <li className="flex flex-col items-center text-center gap-2">
-                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
-                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
-                                    </div>
-                                    <p className="text-lg text-foreground font-medium leading-snug">Movement guided and controlled</p>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Movement guided and controlled</p>
                                 </li>
-                                <li className="flex flex-col items-center text-center gap-2">
-                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
-                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
-                                    </div>
-                                    <p className="text-lg text-foreground font-medium leading-snug">Public space becomes an infrastructure</p>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Public space becomes an infrastructure</p>
                                 </li>
                             </ul>
                         </div>
@@ -216,23 +210,42 @@ export function StratificationSection() {
                             This transformation reduces informal encounters and weakens the sense of local urban life.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
-                                    alt="Ground floor plan"
-                                    fill
-                                    className="object-contain"
-                                />
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 mb-12">
+                            <div className="space-y-4">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
+                                        alt="Ground floor plan"
+                                        fill
+                                        className="object-contain hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                                <p className="text-sm text-center font-medium text-muted-foreground">Urban life at ground level</p>
                             </div>
-                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
-                                    alt="Upper floor plan"
-                                    fill
-                                    className="object-contain"
-                                />
+                            <div className="space-y-4">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
+                                        alt="Upper floor plan"
+                                        fill
+                                        className="object-contain hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                                <p className="text-sm text-center font-medium text-muted-foreground">Efficiency replaces everyday urbanity</p>
                             </div>
+                        </div>
+
+                        <div className="max-w-3xl mx-auto pt-4">
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">From lived space to system of flows</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Local interactions are reduced</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
