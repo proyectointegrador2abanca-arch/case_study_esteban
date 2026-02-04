@@ -105,9 +105,7 @@ export function HeritageSection() {
                         </div>
                     </div>
 
-                    <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
-                        Demolition of Les Halles and repercussion compared to the one during Haussmann. Different visions of heritage.
-                    </p>
+
 
                     <div className="overflow-x-auto rounded-xl border border-border/50 bg-card/30">
                         <table className="w-full text-left text-sm">
