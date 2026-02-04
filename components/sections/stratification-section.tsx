@@ -29,16 +29,42 @@ export function StratificationSection() {
                         </div>
                     </div>
                     <div className="w-full">
-                        <LayerStack
-                            layers={[
-                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa1.png", alt: "Layer 1: Underground Base", label: "Layer 1: Underground Base" },
-                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa2.png", alt: "Layer 2: Structural Grid", label: "Layer 2: Structural Grid" },
-                                { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa3.png", alt: "Layer 3: Surface Integration", label: "Layer 3: Surface Integration" },
-                            ]}
-                        />
-                        <p className="mt-4 text-center text-sm text-muted-foreground">
-                            Exploded 3D of Haussman plan showing stratification of layers.
-                        </p>
+                        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                            <div className="lg:col-span-3">
+                                <LayerStack
+                                    layers={[
+                                        { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa1.png", alt: "Layer 1: Underground Base", label: "Layer 1: Underground Base" },
+                                        { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa2.png", alt: "Layer 2: Structural Grid", label: "Layer 2: Structural Grid" },
+                                        { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa3.png", alt: "Layer 3: Surface Integration", label: "Layer 3: Surface Integration" },
+                                    ]}
+                                />
+                                <p className="mt-4 text-center text-sm text-muted-foreground">
+                                    Exploded 3D of Haussman plan showing stratification of layers.
+                                </p>
+                            </div>
+                            <div className="lg:col-span-2 space-y-6">
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span className="h-2 w-2 rounded-full bg-primary" />
+                                        </div>
+                                        <p className="text-lg text-foreground font-medium">Urban life at ground level</p>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span className="h-2 w-2 rounded-full bg-primary" />
+                                        </div>
+                                        <p className="text-lg text-foreground font-medium">Underground as support, not public space</p>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span className="h-2 w-2 rounded-full bg-primary" />
+                                        </div>
+                                        <p className="text-lg text-foreground font-medium">Strong continuity between market and streets</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                             <div className="space-y-3">
