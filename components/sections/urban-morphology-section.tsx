@@ -15,6 +15,12 @@ export function UrbanMorphologySection() {
                     <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                         1. Morphology: before / after Haussmann
                     </p>
+                    <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2">
+                        <p>Before Haussmann, the neighborhood around Les Halles was an organic and fragmented fabric structured by medieval streets and scattered markets.</p>
+                        <p>Haussmann’s intervention reorganized this fabric through new axes, wider streets, and clearer alignments.</p>
+                        <p>Baltard’s pavilions acted as open civic structures, connecting the market to the surrounding streets.</p>
+                        <p>Rather than isolating the site, the project reinforced its role as a central piece within a continuous urban fabric.</p>
+                    </div>
                 </div>
 
                 {/* Interactive Image Comparison 1: Before / After Haussmann */}
@@ -75,6 +81,12 @@ export function UrbanMorphologySection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             2. Morphology: Haussmann / Forum
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>The late-modern intervention took a fundamentally different approach.</p>
+                            <p>The existing street grid was largely preserved, but the Forum des Halles no longer structured the surrounding fabric.</p>
+                            <p>Instead of reinforcing urban continuity, the project concentrated transformation within the site itself.</p>
+                            <p>The Halles became an inward-looking object, whose relationship with the surrounding neighborhood was weakened, despite its central location.</p>
+                        </div>
                         <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest">
                             Scale of Forum des Halles’ transformation between 1904 and 1990
                         </p>
