@@ -47,6 +47,15 @@ export function HeritageSection() {
                             </p>
                         </div>
                     </div>
+                    <div className="w-full mt-8">
+                        <Image
+                            src="/imagenes_extraidas_pdf/images/41 copy.png"
+                            alt="Saint-Eustache comparison detailed view"
+                            width={1920}
+                            height={1080}
+                            className="w-full h-auto object-contain"
+                        />
+                    </div>
                 </div>
 
                 {/* Subsection 2 */}
