@@ -55,6 +55,12 @@ export function HeritageSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             2. Heritage selection & loss
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>During the Haussmannian period, criticism focused on cost, social displacement, and aesthetics, but rarely on heritage loss.</p>
+                            <p>Ordinary buildings and markets were not considered worthy of preservation.</p>
+                            <p>By the 1970s, heritage discourse had expanded to include everyday architecture and urban memory.</p>
+                            <p>Despite strong opposition to the demolition of Les Halles, economic and infrastructural priorities ultimately prevailed.</p>
+                        </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
@@ -107,6 +113,26 @@ export function HeritageSection() {
                     <p className="text-center text-muted-foreground max-w-2xl mx-auto">
                         Parallel between Victor Hugo and Romanticism and the change of direction for heritage after the demolition of Les Halles.
                     </p>
+                </div>
+
+                {/* Subsection 4: Findings */}
+                <div className="space-y-6 pt-12 border-t border-border/40">
+                    <div className="text-center space-y-2">
+                        <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+                            4. Findings
+                        </p>
+                    </div>
+                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
+                        <p>
+                            Heritage is not an intrinsic quality but the result of cultural and historical selection.
+                        </p>
+                        <p>
+                            While awareness of urban heritage increased over time, both transformations demonstrate that heritage concerns remain secondary when confronted with economic interests and large-scale urban projects.
+                        </p>
+                        <p>
+                            Protests and counterproposals remained ineffective when they failed to align with institutional priorities, which privileged administrative efficiency and economic value over heritage preservation.
+                        </p>
+                    </div>
                 </div>
 
             </div>
