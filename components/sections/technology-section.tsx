@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
-
 
 const sideImages = [
   {
@@ -35,10 +33,8 @@ const sideImages = [
 
 export function TechnologySection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const textSectionRef = useRef<HTMLDivElement>(null);
   // State for scroll progress calculation
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [textProgress, setTextProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,21 +46,6 @@ export function TechnologySection() {
       const progress = Math.max(0, Math.min(1, scrolled / scrollableHeight));
 
       setScrollProgress(progress);
-
-      // Text scroll progress
-      if (textSectionRef.current) {
-        const textRect = textSectionRef.current.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        const startOffset = windowHeight * 0.9;
-        const endOffset = windowHeight * 0.1;
-
-        const totalDistance = startOffset - endOffset;
-        const currentPosition = startOffset - textRect.top;
-
-        const newTextProgress = Math.max(0, Math.min(1, currentPosition / totalDistance));
-        setTextProgress(newTextProgress);
-      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -221,43 +202,6 @@ export function TechnologySection() {
       {/* Scroll space to enable animation */}
       <div className="h-[200vh]" />
 
-      {/* Description Section with Background Image and Scroll Reveal */}
-      <div
-        ref={textSectionRef}
-        className="relative overflow-hidden bg-background px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
-      >
-        {/* Background Image with Grayscale Filter */}
-
-
-        {/* Text Content */}
-        <div className="relative z-10 mx-auto max-w-4xl space-y-12">
-          <div className="space-y-4">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-              Conclusions:
-            </h2>
-            <div className="space-y-12">
-              <ScrollRevealText
-                text="Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes."
-                progress={Math.max(0, Math.min(1, textProgress * 4))}
-              />
-              <ScrollRevealText
-                text="The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there."
-                progress={Math.max(0, Math.min(1, (textProgress - 0.25) * 4))}
-              />
-              <ScrollRevealText
-                text="The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale."
-                progress={Math.max(0, Math.min(1, (textProgress - 0.5) * 4))}
-              />
-              <ScrollRevealText
-                text="Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself."
-                progress={Math.max(0, Math.min(1, (textProgress - 0.75) * 4))}
-              />
-            </div>
-          </div>
-
-
-        </div>
-      </div>
     </section>
   );
 }

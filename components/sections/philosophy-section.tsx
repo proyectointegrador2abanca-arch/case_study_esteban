@@ -3,33 +3,52 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
+import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
+
 export function PhilosophySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const textSectionRef = useRef<HTMLDivElement>(null);
   const [alpineTranslateX, setAlpineTranslateX] = useState(-100);
   const [forestTranslateX, setForestTranslateX] = useState(100);
   const [titleOpacity, setTitleOpacity] = useState(1);
+  const [textProgress, setTextProgress] = useState(0);
   const rafRef = useRef<number | null>(null);
 
   const updateTransforms = useCallback(() => {
-    if (!sectionRef.current) return;
+    if (sectionRef.current) {
+      const rect = sectionRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const sectionHeight = sectionRef.current.offsetHeight;
 
-    const rect = sectionRef.current.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    const sectionHeight = sectionRef.current.offsetHeight;
+      // Calculate progress based on scroll position
+      const scrollableRange = sectionHeight - windowHeight;
+      const scrolled = -rect.top;
+      const progress = Math.max(0, Math.min(1, scrolled / scrollableRange));
 
-    // Calculate progress based on scroll position
-    const scrollableRange = sectionHeight - windowHeight;
-    const scrolled = -rect.top;
-    const progress = Math.max(0, Math.min(1, scrolled / scrollableRange));
+      // Alpine comes from left (-100% to 0%)
+      setAlpineTranslateX((1 - progress) * -100);
 
-    // Alpine comes from left (-100% to 0%)
-    setAlpineTranslateX((1 - progress) * -100);
+      // Forest comes from right (100% to 0%)
+      setForestTranslateX((1 - progress) * 100);
 
-    // Forest comes from right (100% to 0%)
-    setForestTranslateX((1 - progress) * 100);
+      // Title fades out as blocks come together
+      setTitleOpacity(1 - progress);
+    }
 
-    // Title fades out as blocks come together
-    setTitleOpacity(1 - progress);
+    // Text scroll progress
+    if (textSectionRef.current) {
+      const textRect = textSectionRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const startOffset = windowHeight * 0.9;
+      const endOffset = windowHeight * 0.1;
+
+      const totalDistance = startOffset - endOffset;
+      const currentPosition = startOffset - textRect.top;
+
+      const newTextProgress = Math.max(0, Math.min(1, currentPosition / totalDistance));
+      setTextProgress(newTextProgress);
+    }
   }, []);
 
   useEffect(() => {
@@ -88,7 +107,6 @@ export function PhilosophySection() {
                   fill
                   className="object-cover"
                 />
-                {/* Removed label as per generic request "change meet alpine..." implying new context, keeping structure clean or swapping labels? User said "change meet alpine... to from 1910 to 2026". I'll assume labels might not be needed or should be swapped. I'll swap labels too just safely. */}
                 <div className="absolute bottom-6 left-6">
                   <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
                     Before
@@ -124,7 +142,35 @@ export function PhilosophySection() {
       </div>
 
       {/* Description */}
-      <div className="px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-36 lg:pb-14">
+      <div ref={textSectionRef} className="px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-36 lg:pb-14">
+        <div className="mx-auto max-w-4xl space-y-12 mb-24">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+            Conclusions:
+          </h2>
+          <div className="space-y-12">
+            <ScrollRevealText
+              text="Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes."
+              progress={Math.max(0, Math.min(1, textProgress * 4))}
+              className="text-left"
+            />
+            <ScrollRevealText
+              text="The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there."
+              progress={Math.max(0, Math.min(1, (textProgress - 0.25) * 4))}
+              className="text-left"
+            />
+            <ScrollRevealText
+              text="The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale."
+              progress={Math.max(0, Math.min(1, (textProgress - 0.5) * 4))}
+              className="text-left"
+            />
+            <ScrollRevealText
+              text="Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself."
+              progress={Math.max(0, Math.min(1, (textProgress - 0.75) * 4))}
+              className="text-left"
+            />
+          </div>
+        </div>
+
         <div className="text-center">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
             Urban Evolution
