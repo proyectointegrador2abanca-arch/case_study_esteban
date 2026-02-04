@@ -292,18 +292,20 @@ export function ParcelStructureSection() {
                             Urban form becomes more predictable, but also less resilient and less socially rich.
                         </p>
 
-                        <div className="pt-8 space-y-4">
-                            <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 shadow-sm">
+                        <div className="pt-8 space-y-4 max-w-4xl mx-auto">
+                            <div className="relative aspect-[16/9] w-full overflow-hidden">
                                 <Image
                                     src="/imagenes_extraidas_pdf/images/iamgenes_3.png"
-                                    alt="Haussmann reinforces urban continuity"
+                                    alt="Evolution of urban fabric context"
                                     fill
                                     className="object-contain"
                                 />
                             </div>
-                            <p className="text-center text-sm text-muted-foreground font-medium uppercase tracking-widest">
-                                Haussmann reinforces urban continuity
-                            </p>
+                            <div className="grid grid-cols-3 gap-4 text-xs text-center text-muted-foreground font-medium italic">
+                                <p>Les Halles et la rue de la Tonnellerie, painting of the old urban fabric, Canella Giuseppe, 1828</p>
+                                <p>St Eustache from rue Rambuteau, Gallica, 1926</p>
+                                <p>St Eustache from rue Rambuteau, google maps, 2009</p>
+                            </div>
                         </div>
                     </div>
                 </div>
