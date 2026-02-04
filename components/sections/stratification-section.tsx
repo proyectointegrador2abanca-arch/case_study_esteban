@@ -129,6 +129,29 @@ export function StratificationSection() {
                             Interactive stratification of the Forum des Halles levels. Use arrows to explore.
                         </p>
 
+                        <div className="max-w-4xl mx-auto bg-secondary/5 rounded-2xl p-8 border border-border/50 mt-12">
+                            <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <li className="flex flex-col items-center text-center gap-2">
+                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+                                    </div>
+                                    <p className="text-lg text-foreground font-medium leading-snug">Vertical separation of functions</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-2">
+                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+                                    </div>
+                                    <p className="text-lg text-foreground font-medium leading-snug">Movement guided and controlled</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-2">
+                                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                        <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+                                    </div>
+                                    <p className="text-lg text-foreground font-medium leading-snug">Public space becomes an infrastructure</p>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                             <div className="space-y-3">
                                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
