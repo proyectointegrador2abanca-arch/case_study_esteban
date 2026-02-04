@@ -23,6 +23,35 @@ export function DetailedCaseStudySection() {
                             Both interventions were driven by the same ambitions of modernization, hygiene, and efficiency, yet with contrasting results. The Haussmannian project integrated the market within a coherent civic structure, while the late-modern reconstruction produced a fragmented infrastructure disconnected from its surroundings.
                         </p>
                     </div>
+
+                    {/* Canva Embed */}
+                    <div className="mt-16 w-full max-w-5xl mx-auto">
+                        <div
+                            className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border"
+                            style={{
+                                paddingTop: '56.25%', // 16:9 Aspect Ratio
+                            }}
+                        >
+                            <iframe
+                                loading="lazy"
+                                className="absolute top-0 left-0 w-full h-full border-none p-0 m-0"
+                                src="https://www.canva.com/design/DAHABe_wVX8/EgDx5l7iNLJ3zWZcIXSwsQ/view?embed"
+                                allowFullScreen
+                                allow="fullscreen"
+                                title="Canva Presentation"
+                            ></iframe>
+                        </div>
+                        <div className="mt-4 text-center text-sm text-muted-foreground">
+                            <a
+                                href="https://www.canva.com/design/DAHABe_wVX8/EgDx5l7iNLJ3zWZcIXSwsQ/view?utm_content=DAHABe_wVX8&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline opacity-50 hover:opacity-100 transition-opacity"
+                            >
+                                Open in Canva
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
 
