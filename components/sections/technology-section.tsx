@@ -236,10 +236,22 @@ export function TechnologySection() {
               Conclusions:
             </h2>
             <div className="space-y-12">
-              <ScrollRevealText text="Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes." />
-              <ScrollRevealText text="The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there." />
-              <ScrollRevealText text="The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale." />
-              <ScrollRevealText text="Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself." />
+              <ScrollRevealText
+                text="Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes."
+                progress={Math.max(0, Math.min(1, textProgress * 4))}
+              />
+              <ScrollRevealText
+                text="The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there."
+                progress={Math.max(0, Math.min(1, (textProgress - 0.25) * 4))}
+              />
+              <ScrollRevealText
+                text="The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale."
+                progress={Math.max(0, Math.min(1, (textProgress - 0.5) * 4))}
+              />
+              <ScrollRevealText
+                text="Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself."
+                progress={Math.max(0, Math.min(1, (textProgress - 0.75) * 4))}
+              />
             </div>
           </div>
 

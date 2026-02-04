@@ -6,13 +6,16 @@ import { cn } from "@/lib/utils";
 interface ScrollRevealTextProps {
     text: string;
     className?: string;
+    progress?: number;
 }
 
-export function ScrollRevealText({ text, className }: ScrollRevealTextProps) {
+export function ScrollRevealText({ text, className, progress: manualProgress }: ScrollRevealTextProps) {
     const containerRef = useRef<HTMLParagraphElement>(null);
-    const [progress, setProgress] = useState(0);
+    const [internalProgress, setInternalProgress] = useState(0);
 
     useEffect(() => {
+        if (manualProgress !== undefined) return;
+
         const handleScroll = () => {
             if (!containerRef.current) return;
 
@@ -27,16 +30,17 @@ export function ScrollRevealText({ text, className }: ScrollRevealTextProps) {
             const currentPosition = startOffset - rect.top;
 
             const newProgress = Math.max(0, Math.min(1, currentPosition / totalDistance));
-            setProgress(newProgress);
+            setInternalProgress(newProgress);
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
         handleScroll(); // Initial check
 
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [manualProgress]);
 
     const words = text.split(" ");
+    const activeProgress = manualProgress ?? internalProgress;
 
     return (
         <p
@@ -45,7 +49,7 @@ export function ScrollRevealText({ text, className }: ScrollRevealTextProps) {
         >
             {words.map((word, index) => {
                 const wordProgress = index / words.length;
-                const isRevealed = progress > wordProgress;
+                const isRevealed = activeProgress > wordProgress;
 
                 return (
                     <span
