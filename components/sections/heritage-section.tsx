@@ -122,9 +122,72 @@ export function HeritageSection() {
                             />
                         </div>
                     </div>
-                    <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
                         Demolition of Les Halles and repercussion compared to the one during Haussmann. Different visions of heritage.
                     </p>
+
+                    <div className="overflow-x-auto rounded-xl border border-border/50 bg-card/30">
+                        <table className="w-full text-left text-sm">
+                            <thead>
+                                <tr className="border-b border-border/50 bg-secondary/10">
+                                    <th className="p-6 w-24"></th>
+                                    <th className="p-6 text-base font-semibold text-foreground w-[45%]">
+                                        19th century / Haussmann demolition of old Paris and construction of the Halles Baltard
+                                    </th>
+                                    <th className="p-6 text-base font-semibold text-foreground w-[45%]">
+                                        Late modern period / Demolition of the Halles and Forum
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-border/20">
+                                <tr>
+                                    <td className="p-6 font-semibold text-foreground align-top bg-secondary/5">Against</td>
+                                    <td className="p-6 align-top space-y-4">
+                                        <ul className="space-y-2 text-muted-foreground list-disc pl-4 marker:text-primary/50">
+                                            <li>Social displacement and gentrification</li>
+                                            <li>Exorbitant public cost and debt</li>
+                                            <li>Authoritarian planning, lack of democratic control</li>
+                                            <li>No critic of loss of heritage concerning the old Paris</li>
+                                        </ul>
+                                        <div className="pt-2">
+                                            <p className="text-xs text-muted-foreground italic font-medium">Image: Jules Ferry, Les Comptes fantastiques d’Haussmann, 1868</p>
+                                        </div>
+                                    </td>
+                                    <td className="p-6 align-top space-y-4">
+                                        <ul className="space-y-2 text-muted-foreground list-disc pl-4 marker:text-primary/50">
+                                            <li>Loss of an iconic modern heritage (Baltard)</li>
+                                            <li>Destruction of everyday urban memory</li>
+                                            <li>Rejection by citizens, architects, and intellectuals</li>
+                                        </ul>
+                                        <blockquote className="bg-secondary/10 p-4 rounded-lg border-l-2 border-primary text-xs italic text-muted-foreground my-4">
+                                            “We spend a lot of money unnecessarily on certain things, but we can certainly spend it on those things that will be something for our children in the future.”
+                                            <span className="block mt-2 not-italic font-medium">- Resident interviewed about the fate of Les Halles</span>
+                                        </blockquote>
+                                        <p className="text-xs text-muted-foreground italic font-medium">Image: Cover page of L’Observateur (12 July 1971)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="p-6 font-semibold text-foreground align-top bg-secondary/5">For</td>
+                                    <td className="p-6 align-top space-y-4">
+                                        <ul className="space-y-2 text-muted-foreground list-disc pl-4 marker:text-primary/50">
+                                            <li>Hygiene, circulation, and public health</li>
+                                            <li>Modernization of the capital</li>
+                                            <li>Architectural innovation (iron, glass, infrastructure)</li>
+                                        </ul>
+                                        <p className="text-xs text-muted-foreground italic font-medium">Image: Mémoire du baron Haussmann, 1890-1893</p>
+                                    </td>
+                                    <td className="p-6 align-top space-y-4">
+                                        <ul className="space-y-2 text-muted-foreground list-disc pl-4 marker:text-primary/50">
+                                            <li>Functional obsolescence of the markets</li>
+                                            <li>Need for metropolitan transport infrastructure</li>
+                                            <li>Economic redevelopment of the city center</li>
+                                        </ul>
+                                        <p className="text-xs text-muted-foreground italic font-medium">Image: APUR, Les Halles: Urbanisme ou Muséographie, 1971</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 {/* Subsection 3 */}
