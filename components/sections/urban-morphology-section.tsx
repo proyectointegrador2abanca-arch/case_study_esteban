@@ -94,19 +94,20 @@ export function UrbanMorphologySection() {
                                 <p>Instead of reinforcing urban continuity, the project concentrated transformation within the site itself.</p>
                                 <p>The Halles became an inward-looking object, whose relationship with the surrounding neighborhood was weakened, despite its central location.</p>
                             </div>
-                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/arriba_colores.png"
-                                    alt="Forum Transformation Details"
-                                    fill
-                                    className="object-contain bg-secondary/5"
-                                />
+                            <div className="space-y-2">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/arriba_colores.png"
+                                        alt="Forum Transformation Details"
+                                        fill
+                                        className="object-contain bg-secondary/5"
+                                    />
+                                </div>
+                                <p className="text-xs text-center text-muted-foreground italic">
+                                    Scale of Forum des Halles’ transformation between 1904 and 1990
+                                </p>
                             </div>
                         </div>
-
-                        <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest">
-                            Scale of Forum des Halles’ transformation between 1904 and 1990
-                        </p>
                     </div>
 
                     <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto overflow-hidden rounded-2xl border border-border/50 shadow-sm group">
