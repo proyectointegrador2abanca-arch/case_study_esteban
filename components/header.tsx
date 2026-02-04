@@ -70,18 +70,7 @@ export function Header() {
           >
             Abstract
           </Link>
-          <Link
-            href="#history"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            History
-          </Link>
-          <Link
-            href="#interviews"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Interviews
-          </Link>
+
           <Link
             href="#credits"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
@@ -119,20 +108,7 @@ export function Header() {
             >
               Timeline
             </Link>
-            <Link
-              href="#history"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              History
-            </Link>
-            <Link
-              href="#interviews"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Interviews
-            </Link>
+
             <Link
               href="#credits"
               className="text-lg text-foreground"
