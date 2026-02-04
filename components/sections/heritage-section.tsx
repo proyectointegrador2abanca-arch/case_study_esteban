@@ -36,15 +36,32 @@ export function HeritageSection() {
                             className="w-full h-auto object-contain"
                         />
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-center">
-                            <p className="text-xs text-muted-foreground">
-                                St Eustache on the Turgot plan, David Rumsey Collection, 1736-1739
+                            <p className="text-sm font-medium text-muted-foreground">
+                                St Eustache in 1850
                             </p>
-                            <p className="text-xs text-muted-foreground">
-                                St Eustache from rue Rambuteau, Gallica, 1926
+                            <p className="text-sm font-medium text-muted-foreground">
+                                St Eustache in 1904
                             </p>
-                            <p className="text-xs text-muted-foreground">
-                                St Eustache from rue Rambuteau, google maps, 2009
+                            <p className="text-sm font-medium text-muted-foreground">
+                                St Eustache in 1986
                             </p>
+                        </div>
+
+                        <div className="max-w-4xl mx-auto pt-8">
+                            <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Monument protected as heritage</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Continuity through transformations</p>
+                                </li>
+                                <li className="flex flex-col items-center text-center gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                    <p className="text-base text-muted-foreground font-medium leading-snug">Exception within changing fabric</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="w-full mt-8">
