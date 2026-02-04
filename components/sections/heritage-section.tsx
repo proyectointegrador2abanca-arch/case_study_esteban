@@ -234,12 +234,12 @@ export function HeritageSection() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
                         <div className="space-y-3">
-                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5">
                                 <Image
                                     src="/imagenes_extraidas_pdf/images/caputra1.png"
                                     alt="Heritage impact 1"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
                             <p className="text-xs text-center text-muted-foreground italic">
@@ -247,12 +247,12 @@ export function HeritageSection() {
                             </p>
                         </div>
                         <div className="space-y-3">
-                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5">
                                 <Image
                                     src="/imagenes_extraidas_pdf/images/captura22.png"
                                     alt="Heritage impact 2"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
                             <p className="text-xs text-center text-muted-foreground italic">
@@ -260,12 +260,12 @@ export function HeritageSection() {
                             </p>
                         </div>
                         <div className="space-y-3">
-                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5">
                                 <Image
                                     src="/imagenes_extraidas_pdf/images/captura33.png"
                                     alt="Heritage impact 3"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
                         </div>
