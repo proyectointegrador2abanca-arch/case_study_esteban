@@ -21,6 +21,12 @@ export function StratificationSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             1. Haussmann: surface-based city
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>In the Haussmannian period, urban life at Les Halles remained primarily surface-based.</p>
+                            <p>Although underground spaces existed for storage and logistics, they did not redefine public space.</p>
+                            <p>Streets crossed the market, and activities extended naturally into the surrounding neighborhood as activities and traffic increased.</p>
+                            <p>Living, working, and trading were closely intertwined, allowing the market to function as an open and permeable part of the city.</p>
+                        </div>
                     </div>
                     <div className="w-full">
                         <LayerStack

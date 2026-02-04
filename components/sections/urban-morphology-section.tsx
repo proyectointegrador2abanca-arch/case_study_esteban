@@ -146,12 +146,15 @@ export function UrbanMorphologySection() {
                             3. Findings
                         </p>
                     </div>
-                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground">
+                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
                         <p>
-                            Conclusion criterion 1
+                            The Haussmannian project restructured the surrounding neighborhood and reinforced spatial continuity between the market and the city.
                         </p>
                         <p>
-                            (Schematic conclusion?)
+                            Les Halles functioned as an organizing element of the urban fabric.
+                        </p>
+                        <p>
+                            In contrast, the Forum des Halles preserved the surrounding streets but lost this structuring role, becoming an autonomous object disconnected from its immediate urban context.
                         </p>
                     </div>
                 </div>
