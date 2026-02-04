@@ -142,16 +142,7 @@ export function AnnexesSection() {
                     </div>
                 </div>
 
-                {/* Annex 3: Methodology & Limits */}
-                <div className="space-y-8">
-                    <h3 className="text-2xl font-medium text-foreground border-b border-border/40 pb-4">
-                        Annex 3: Methodology & limits
-                    </h3>
-                    <div className="text-muted-foreground">
-                        <p>Methodological frameworks and research limitations.</p>
-                        {/* Placeholder content - can be expanded later */}
-                    </div>
-                </div>
+
 
             </div>
         </section>
