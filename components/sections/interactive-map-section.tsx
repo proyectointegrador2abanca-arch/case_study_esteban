@@ -36,6 +36,16 @@ const axonometryImages = [
 Medieval streets, vernacular housing
 First reconstruction plans: limited by cost`,
                 images: ["/imagenes_extraidas_pdf/img57.jpg"]
+            },
+            {
+                id: 7,
+                // 539, 246 (1135x650)
+                top: "37.85%",
+                left: "47.49%",
+                title: "Rue des Prouvaires",
+                imageCaption: "La rue des Prouvaires et l'église Saint-Eustache, painting of the old urban fabric, Canella Giuseppe, 1828",
+                description: "View of the Rue des Prouvaires and Saint-Eustache church, depicting the dense medieval urban fabric before the major 19th-century transformations.",
+                images: ["/imagenes_extraidas_pdf/imagen:diapos.png"]
             }
         ]
     },
