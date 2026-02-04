@@ -143,9 +143,45 @@ export function InteractiveMapSection() {
                     {axonometryImages.map((axono, index) => (
                         <div key={index}>
                             {index === 0 && (
-                                <h3 className="text-xl font-medium text-foreground mb-6 text-center">
-                                    Organic urban fabric and dispersed markets before Haussmann (1800–1850)
-                                </h3>
+                                <>
+                                    <h3 className="text-xl font-medium text-foreground mb-6 text-center">
+                                        Organic urban fabric and dispersed markets before Haussmann (1800–1850)
+                                    </h3>
+                                    {/* Interactive 1 Image */}
+                                    <div className="mb-8">
+                                        <div className="relative aspect-[16/9] w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-secondary/5 mb-3">
+                                            <Image
+                                                src="/imagenes_extraidas_pdf/images/interactive1.png"
+                                                alt="Victor Baltard General Plan"
+                                                fill
+                                                className="object-contain"
+                                            />
+                                        </div>
+                                        <p className="text-xs text-center text-muted-foreground italic">
+                                            Victor Baltard, General Plan of the Former Les Halles (1854–1866), Musée Carnavalet – History of Paris, Paris Musées.
+                                        </p>
+                                    </div>
+                                </>
+                            )}
+                            {index === 1 && (
+                                <div className="mb-8">
+                                    <h3 className="text-sm font-medium text-foreground mb-4 text-center">
+                                        The Baltard markets in the Haussmannian fabric
+                                    </h3>
+                                    <div className="relative aspect-[16/9] w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-secondary/5 mb-3">
+                                        <Image
+                                            src="/imagenes_extraidas_pdf/images/interactive2.png"
+                                            alt="Baltard Markets Monograph Excerpt"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <p className="text-xs text-center text-muted-foreground italic">
+                                        Excerpts from Victor Baltard, Monographie des Halles centrales de Paris (Paris, 1863–1872)
+                                        <br />
+                                        Source: Cité de l'architecture & du patrimoine/Musée des Monuments français
+                                    </p>
+                                </div>
                             )}
                             <div className="relative w-full rounded-2xl overflow-hidden border border-border/50 bg-secondary/10 shadow-sm">
                                 <div className="relative aspect-[16/9] w-full">

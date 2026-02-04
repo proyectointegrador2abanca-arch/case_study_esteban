@@ -31,101 +31,69 @@ export function ParcelStructureSection() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
                         {/* Pair 1: img183 / img184 */}
-                        <div className="space-y-2">
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm bg-muted mb-4">
+                        {/* Pair 1: img183 / img184 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img183 (Before) */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/images/interactive1.png"
-                                    alt="Victor Baltard General Plan"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg"
+                                    alt="Parcel Structure View 1A"
                                     fill
-                                    className="object-contain"
+                                    className="object-cover"
                                 />
-                            </div>
-                            <p className="text-xs text-center text-muted-foreground italic leading-tight px-4 mb-4">
-                                Victor Baltard, General Plan of the Former Les Halles (1854–1866), Musée Carnavalet – History of Paris, Paris Musées.
-                            </p>
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                                {/* Default: img183 (Before) */}
-                                <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img183.jpg"
-                                        alt="Parcel Structure View 1A"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute bottom-6 left-6">
-                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                            Before
-                                        </span>
-                                    </div>
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
                                 </div>
-                                {/* Hover: img184 (After) */}
-                                <div className="absolute inset-0 z-0">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg"
-                                        alt="Parcel Structure View 1B"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute bottom-6 left-6">
-                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                            After
-                                        </span>
-                                    </div>
+                            </div>
+                            {/* Hover: img184 (After) */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img184.jpg"
+                                    alt="Parcel Structure View 1B"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
                                 </div>
                             </div>
                         </div>
 
                         {/* Pair 2: img187 / img188 */}
-                        <div className="space-y-2">
-                            <p className="text-sm font-medium text-foreground text-center">
-                                The Baltard markets in the Haussmannian fabric
-                            </p>
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm bg-muted mb-4">
+                        {/* Pair 2: img187 / img188 */}
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                            {/* Default: img187 (Before) */}
+                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
                                 <Image
-                                    src="/imagenes_extraidas_pdf/images/interactive2.png"
-                                    alt="Baltard Markets Monograph Excerpt"
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
+                                    alt="Parcel Structure View 2A"
                                     fill
-                                    className="object-contain"
+                                    className="object-cover"
                                 />
-                            </div>
-                            <p className="text-xs text-center text-muted-foreground italic leading-tight px-4 mb-4">
-                                Excerpts from Victor Baltard, Monographie des Halles centrales de Paris (Paris, 1863–1872)
-                                <br />
-                                Source: Cité de l'architecture & du patrimoine/Musée des Monuments français
-                            </p>
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                                {/* Default: img187 (Before) */}
-                                <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
-                                        alt="Parcel Structure View 2A"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute bottom-6 left-6">
-                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                            Before
-                                        </span>
-                                    </div>
-                                </div>
-                                {/* Hover: img188 (After) */}
-                                <div className="absolute inset-0 z-0">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
-                                        alt="Parcel Structure View 2B"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute bottom-6 left-6">
-                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                            After
-                                        </span>
-                                    </div>
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        Before
+                                    </span>
                                 </div>
                             </div>
-                            <p className="text-xs text-center text-muted-foreground italic leading-tight px-4">
-                                Rue des Prouvaires. View taken from rue de Roule and looking north, 1865 (source: BHDV, anct bibliothèque de la préfecture de la Seine)
-                            </p>
+                            {/* Hover: img188 (After) */}
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
+                                    alt="Parcel Structure View 2B"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute bottom-6 left-6">
+                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                        After
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Pair 3: img186 / img185 (Swapped: 186 is now Default/Before) */}
