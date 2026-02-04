@@ -292,40 +292,18 @@ export function ParcelStructureSection() {
                             Urban form becomes more predictable, but also less resilient and less socially rich.
                         </p>
 
-                        <div className="pt-8 space-y-6">
-                            <h3 className="text-xl font-medium text-foreground">
-                                Loss of neighborhood-scale structure
-                            </h3>
-                            <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-sm group cursor-pointer max-w-4xl mx-auto">
-                                {/* Base Image: first.png */}
-                                <div className="absolute inset-0 transition-opacity duration-300 ease-in-out group-hover:opacity-0 z-10">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/first.png"
-                                        alt="Haussmann reinforces urban continuity"
-                                        fill
-                                        className="object-contain"
-                                    />
-                                    <div className="absolute bottom-4 left-0 right-0 text-center">
-                                        <span className="inline-block px-3 py-1 bg-background/80 backdrop-blur-sm rounded-full text-xs font-medium text-foreground">
-                                            Haussmann reinforces urban continuity
-                                        </span>
-                                    </div>
-                                </div>
-                                {/* Hover Image: second.png */}
-                                <div className="absolute inset-0 z-0">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/second.png"
-                                        alt="Forum becomes an isolated object"
-                                        fill
-                                        className="object-contain"
-                                    />
-                                    <div className="absolute bottom-4 left-0 right-0 text-center">
-                                        <span className="inline-block px-3 py-1 bg-background/80 backdrop-blur-sm rounded-full text-xs font-medium text-foreground">
-                                            Forum becomes an isolated object
-                                        </span>
-                                    </div>
-                                </div>
+                        <div className="pt-8 space-y-4">
+                            <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 shadow-sm">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/iamgenes_3.png"
+                                    alt="Haussmann reinforces urban continuity"
+                                    fill
+                                    className="object-contain"
+                                />
                             </div>
+                            <p className="text-center text-sm text-muted-foreground font-medium uppercase tracking-widest">
+                                Haussmann reinforces urban continuity
+                            </p>
                         </div>
                     </div>
                 </div>
