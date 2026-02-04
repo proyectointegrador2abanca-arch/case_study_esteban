@@ -104,24 +104,7 @@ export function HeritageSection() {
                             <p>Despite strong opposition to the demolition of Les Halles, economic and infrastructural priorities ultimately prevailed.</p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/img129.jpg"
-                                alt="Heritage Vision 1"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/img210.jpg"
-                                alt="Heritage Vision 2"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
+
                     <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
                         Demolition of Les Halles and repercussion compared to the one during Haussmann. Different visions of heritage.
                     </p>
