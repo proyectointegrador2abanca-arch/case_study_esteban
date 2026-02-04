@@ -215,6 +215,25 @@ export function StratificationSection() {
                         <p>
                             This transformation reduces informal encounters and weakens the sense of local urban life.
                         </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
+                                    alt="Ground floor plan"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
+                                    alt="Upper floor plan"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
