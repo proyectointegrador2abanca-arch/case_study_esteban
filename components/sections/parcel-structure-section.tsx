@@ -20,6 +20,13 @@ export function ParcelStructureSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             1. Parcel structure
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>The Haussmannian transformation profoundly altered parcel structure.</p>
+                            <p>Small, narrow medieval plots were merged into larger parcels, allowing wider façades and more regular courtyards.</p>
+                            <p>This rationalization supported new housing standards and marked an early phase of social and spatial gentrification.</p>
+                            <p>During the Forum redevelopment, parcel structure changed only locally, but where intervention occurred, entire blocks were unified into single large developments.</p>
+                            <p>As parcels grow larger, the diversity of uses per square meter decreases, favoring mono-functional developments.</p>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">

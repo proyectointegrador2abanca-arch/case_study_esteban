@@ -48,6 +48,13 @@ export function StratificationSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             2. Forum: layered and controlled city
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>The Forum des Halles introduced a vertically stratified urban system.</p>
+                            <p>Public space was reorganized across multiple levels connected by stairs, escalators, and corridors.</p>
+                            <p>Functions were separated: transport below, commerce in intermediate levels, and leisure above.</p>
+                            <p>Pedestrian continuity at ground level was interrupted, transforming the Halles into an infrastructure of flows rather than an extension of everyday urban life.</p>
+                            <p>Movement is no longer spontaneous but guided, controlled, and programmed through architectural devices.</p>
+                        </div>
                     </div>
 
                     <div className="w-full max-w-4xl mx-auto">
@@ -75,9 +82,19 @@ export function StratificationSection() {
                             3. Findings
                         </p>
                     </div>
-                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground">
-                        <p>Why the stratification?</p>
-                        <p>Consequences from Haussmann and then Forum.</p>
+                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
+                        <p>
+                            Baltard’s Halles remained a surface-based public place, with underground spaces supporting rather than restructuring urban life.
+                        </p>
+                        <p>
+                            The Forum des Halles, by contrast, operates as a layered infrastructure prioritizing circulation and efficiency.
+                        </p>
+                        <p>
+                            This shift transforms the Halles from a lived urban place into a controlled system of movement at a metropolitan scale.
+                        </p>
+                        <p>
+                            This transformation reduces informal encounters and weakens the sense of local urban life.
+                        </p>
                     </div>
                 </div>
 
