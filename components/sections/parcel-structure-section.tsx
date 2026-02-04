@@ -292,20 +292,37 @@ export function ParcelStructureSection() {
                             Urban form becomes more predictable, but also less resilient and less socially rich.
                         </p>
 
-                        <div className="pt-8 space-y-4 max-w-4xl mx-auto">
-                            <div className="relative aspect-[16/9] w-full overflow-hidden">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/images/iamgenes_3.png"
-                                    alt="Evolution of urban fabric context"
-                                    fill
-                                    className="object-contain"
-                                />
+                        <div className="pt-8 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 items-center max-w-5xl mx-auto text-left">
+                            <div className="space-y-4">
+                                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/images/iamgenes_3.png"
+                                        alt="Evolution of urban fabric context"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="grid grid-cols-3 gap-4 text-xs text-center text-muted-foreground font-medium italic">
+                                    <p>Les Halles et la rue de la Tonnellerie, painting of the old urban fabric, Canella Giuseppe, 1828</p>
+                                    <p>St Eustache from rue Rambuteau, Gallica, 1926</p>
+                                    <p>St Eustache from rue Rambuteau, google maps, 2009</p>
+                                </div>
                             </div>
-                            <div className="grid grid-cols-3 gap-4 text-xs text-center text-muted-foreground font-medium italic">
-                                <p>Les Halles et la rue de la Tonnellerie, painting of the old urban fabric, Canella Giuseppe, 1828</p>
-                                <p>St Eustache from rue Rambuteau, Gallica, 1926</p>
-                                <p>St Eustache from rue Rambuteau, google maps, 2009</p>
-                            </div>
+
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                                    <p className="text-sm text-foreground font-medium">Increasing control over urban form</p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                                    <p className="text-sm text-foreground font-medium">Reduced adaptability of blocks</p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                                    <p className="text-sm text-foreground font-medium">Decline of everyday urban richness</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
