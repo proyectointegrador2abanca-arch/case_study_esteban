@@ -252,20 +252,20 @@ export function ParcelStructureSection() {
 
                     <div className="max-w-4xl mx-auto pt-8">
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-                            <li className="flex flex-col items-center text-center gap-3">
-                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                            <li className="flex items-start text-left gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                 <p className="text-base text-muted-foreground font-medium leading-snug">Height remains the same</p>
                             </li>
-                            <li className="flex flex-col items-center text-center gap-3">
-                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                            <li className="flex items-start text-left gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                 <p className="text-base text-muted-foreground font-medium leading-snug">Fewer courtyards, less porosity</p>
                             </li>
-                            <li className="flex flex-col items-center text-center gap-3">
-                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                            <li className="flex items-start text-left gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                 <p className="text-base text-muted-foreground font-medium leading-snug">Haussmann blocks still face the street</p>
                             </li>
-                            <li className="flex flex-col items-center text-center gap-3">
-                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                            <li className="flex items-start text-left gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                 <p className="text-base text-muted-foreground font-medium leading-snug">Forum blocks turn inward</p>
                             </li>
                         </ul>
