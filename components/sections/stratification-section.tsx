@@ -39,6 +39,35 @@ export function StratificationSection() {
                         <p className="mt-4 text-center text-sm text-muted-foreground">
                             Exploded 3D of Haussman plan showing stratification of layers.
                         </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                            <div className="space-y-3">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/captura lateral.png"
+                                        alt="Section through Baltard’s Halles"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="text-xs text-center text-muted-foreground italic max-w-sm mx-auto">
+                                    Section through Baltard’s Halles showing surface market and service underground (c. 1860)
+                                </p>
+                            </div>
+                            <div className="space-y-3">
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/captura_2.png"
+                                        alt="Demolition site of Les Halles"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <p className="text-xs text-center text-muted-foreground italic max-w-sm mx-auto">
+                                    Photograph of the demolition site of Les Halles, 1972, Archives de Paris
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
