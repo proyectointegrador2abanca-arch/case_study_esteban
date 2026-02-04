@@ -54,9 +54,7 @@ First reconstruction plans: limited by cost`,
 Gas lighting • steel structure • ventilation
 Described by Zola (Le Ventre de Paris, 1873)`,
                 images: [
-                    "/imagenes_extraidas_pdf/img64.jpg",
-                    "/imagenes_extraidas_pdf/img72.jpg",
-                    "/imagenes_extraidas_pdf/img73.jpg"
+                    "/imagenes_extraidas_pdf/img64.jpg"
                 ]
             }
         ]

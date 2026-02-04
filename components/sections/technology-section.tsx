@@ -72,8 +72,8 @@ export function TechnologySection() {
   const borderRadius = imageProgress * 24; // 0px to 24px
   const gap = imageProgress * 16; // 0px to 16px
 
-  // Calculate grayscale for text section based on textProgress
-  const grayscaleAmount = Math.round((1 - textProgress) * 100);
+  // Calculate grayscale for text section based on textProgress - REMOVED
+  // const grayscaleAmount = Math.round((1 - textProgress) * 100);
 
   return (
     <section ref={sectionRef} className="relative bg-foreground">
