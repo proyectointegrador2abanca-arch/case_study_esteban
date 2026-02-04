@@ -294,12 +294,14 @@ export function ParcelStructureSection() {
 
                         <div className="pt-8 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 items-center max-w-5xl mx-auto text-left">
                             <div className="space-y-4">
-                                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                                <div className="relative w-full">
                                     <Image
                                         src="/imagenes_extraidas_pdf/images/iamgenes_3.png"
                                         alt="Evolution of urban fabric context"
-                                        fill
-                                        className="object-contain"
+                                        width={0}
+                                        height={0}
+                                        sizes="100vw"
+                                        className="w-full h-auto"
                                     />
                                 </div>
                                 <div className="grid grid-cols-3 gap-4 text-xs text-center text-muted-foreground font-medium italic">
