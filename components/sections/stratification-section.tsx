@@ -202,46 +202,50 @@ export function StratificationSection() {
                             3. Findings
                         </p>
                     </div>
-                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
-                        <p>
-                            Baltard’s Halles remained a surface-based public place, with underground spaces supporting rather than restructuring urban life.
-                        </p>
-                        <p>
-                            The Forum des Halles, by contrast, operates as a layered infrastructure prioritizing circulation and efficiency.
-                        </p>
-                        <p>
-                            This shift transforms the Halles from a lived urban place into a controlled system of movement at a metropolitan scale.
-                        </p>
-                        <p>
-                            This transformation reduces informal encounters and weakens the sense of local urban life.
-                        </p>
+                    <div className="space-y-12">
+                        <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
+                            <p>
+                                Baltard’s Halles remained a surface-based public place, with underground spaces supporting rather than restructuring urban life.
+                            </p>
+                            <p>
+                                The Forum des Halles, by contrast, operates as a layered infrastructure prioritizing circulation and efficiency.
+                            </p>
+                            <p>
+                                This shift transforms the Halles from a lived urban place into a controlled system of movement at a metropolitan scale.
+                            </p>
+                            <p>
+                                This transformation reduces informal encounters and weakens the sense of local urban life.
+                            </p>
+                        </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 mb-12">
-                            <div className="space-y-4">
-                                <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
-                                        alt="Ground floor plan"
-                                        fill
-                                        className="object-contain hover:scale-105 transition-transform duration-500"
-                                    />
+                        <div className="w-full max-w-5xl mx-auto">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                <div className="space-y-4">
+                                    <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                        <Image
+                                            src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
+                                            alt="Ground floor plan"
+                                            fill
+                                            className="object-contain hover:scale-105 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <p className="text-sm text-center font-medium text-muted-foreground">Urban life at ground level</p>
                                 </div>
-                                <p className="text-sm text-center font-medium text-muted-foreground">Urban life at ground level</p>
-                            </div>
-                            <div className="space-y-4">
-                                <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
-                                    <Image
-                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
-                                        alt="Upper floor plan"
-                                        fill
-                                        className="object-contain hover:scale-105 transition-transform duration-500"
-                                    />
+                                <div className="space-y-4">
+                                    <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                        <Image
+                                            src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
+                                            alt="Upper floor plan"
+                                            fill
+                                            className="object-contain hover:scale-105 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <p className="text-sm text-center font-medium text-muted-foreground">Efficiency replaces everyday urbanity</p>
                                 </div>
-                                <p className="text-sm text-center font-medium text-muted-foreground">Efficiency replaces everyday urbanity</p>
                             </div>
                         </div>
 
-                        <div className="max-w-3xl mx-auto pt-4">
+                        <div className="max-w-3xl mx-auto">
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                                 <li className="flex items-start text-left gap-3">
                                     <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
