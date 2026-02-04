@@ -23,7 +23,7 @@ export function UrbanMorphologySection() {
                             <p>Baltard’s pavilions acted as open civic structures, connecting the market to the surrounding streets.</p>
                             <p>Rather than isolating the site, the project reinforced its role as a central piece within a continuous urban fabric.</p>
                         </div>
-                        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/30 shadow-sm">
+                        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                             <Image
                                 src="/imagenes_extraidas_pdf/imagenes_2_diapo/calles.png"
                                 alt="Haussmann Transformation Details"
@@ -78,15 +78,27 @@ export function UrbanMorphologySection() {
                 {/* Subsection 2: Haussmann / Forum */}
                 <div className="space-y-6 pt-12 border-t border-border/40">
                     <div className="text-center space-y-2">
-                        <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+                        <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground pb-6">
                             2. Morphology: Haussmann / Forum
                         </p>
-                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
-                            <p>The late-modern intervention took a fundamentally different approach.</p>
-                            <p>The existing street grid was largely preserved, but the Forum des Halles no longer structured the surrounding fabric.</p>
-                            <p>Instead of reinforcing urban continuity, the project concentrated transformation within the site itself.</p>
-                            <p>The Halles became an inward-looking object, whose relationship with the surrounding neighborhood was weakened, despite its central location.</p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
+                            <div className="text-muted-foreground leading-relaxed text-left space-y-2">
+                                <p>The late-modern intervention took a fundamentally different approach.</p>
+                                <p>The existing street grid was largely preserved, but the Forum des Halles no longer structured the surrounding fabric.</p>
+                                <p>Instead of reinforcing urban continuity, the project concentrated transformation within the site itself.</p>
+                                <p>The Halles became an inward-looking object, whose relationship with the surrounding neighborhood was weakened, despite its central location.</p>
+                            </div>
+                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/arriba_colores.png"
+                                    alt="Forum Transformation Details"
+                                    fill
+                                    className="object-contain bg-secondary/5"
+                                />
+                            </div>
                         </div>
+
                         <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest">
                             Scale of Forum des Halles’ transformation between 1904 and 1990
                         </p>
@@ -126,17 +138,6 @@ export function UrbanMorphologySection() {
                     <p className="text-center text-xs text-muted-foreground">
                         Hover over the image to compare
                     </p>
-
-                    {/* Additional Image: arriba_colores.png */}
-                    <div className="relative w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm mt-8">
-                        <Image
-                            src="/imagenes_extraidas_pdf/imagenes_2_diapo/arriba_colores.png"
-                            alt="Forum Transformation Details"
-                            width={1920}
-                            height={1080}
-                            className="w-full h-auto object-contain"
-                        />
-                    </div>
                 </div>
 
                 {/* Subsection 3: Findings */}
