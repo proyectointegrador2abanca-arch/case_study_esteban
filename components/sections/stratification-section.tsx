@@ -44,36 +44,21 @@ export function StratificationSection() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-12">
-                        {/* Content Block A */}
-                        <div className="space-y-4">
-                            <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img105.jpg"
-                                    alt="Sectional perspective of railway station"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                            <p className="text-center text-xs text-muted-foreground">
-                                Sectional perspective of the railway station. Source: Paris Projet, no. 8, Aménagement urbanisme avenir, APUR, Paris, 1972
-                            </p>
-                        </div>
-
-                        {/* Content Block B */}
-                        <div className="space-y-4">
-                            <div className="relative aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/img106.jpg"
-                                    alt="Exploded 3D of Forum plan"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                            <p className="text-center text-xs text-muted-foreground">
-                                Exploded 3D of the Forum plan showing presence of underground. East section of the Forum des Halles, 1972 (not definitif)
-                            </p>
-                        </div>
+                    <div className="w-full max-w-4xl mx-auto">
+                        <LayerStack
+                            layers={[
+                                { src: "/capas/SUB 7-1.png", alt: "Level -7", label: "Level -7: Lowest Level" },
+                                { src: "/capas/SUB 6-1.png", alt: "Level -6", label: "Level -6: Transport" },
+                                { src: "/capas/SUB 5-1.png", alt: "Level -5", label: "Level -5: Interchange" },
+                                { src: "/capas/SUB4-1.png", alt: "Level -4", label: "Level -4: Metro/RER" },
+                                { src: "/capas/SUB3-1.png", alt: "Level -3", label: "Level -3: Commercial" },
+                                { src: "/capas/SUB 2-1.png", alt: "Level -2", label: "Level -2: Forum Access" },
+                                { src: "/capas/1,SUB-1.png", alt: "Level -1", label: "Level -1: Ground/Mezzanine" },
+                            ]}
+                        />
+                        <p className="mt-4 text-center text-sm text-muted-foreground">
+                            Interactive stratification of the Forum des Halles levels. Use arrows to explore.
+                        </p>
                     </div>
                 </div>
 
