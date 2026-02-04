@@ -36,10 +36,9 @@ const sideImages = [
 export function TechnologySection() {
   const sectionRef = useRef<HTMLElement>(null);
   const textSectionRef = useRef<HTMLDivElement>(null);
+  // State for scroll progress calculation
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textProgress, setTextProgress] = useState(0);
-
-  const descriptionText = "Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes. The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there. The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale. Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -236,7 +235,12 @@ export function TechnologySection() {
             <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
               Conclusions:
             </h2>
-            <ScrollRevealText text={descriptionText} />
+            <div className="space-y-12">
+              <ScrollRevealText text="Both interventions were driven by ambitions of modernization, hygiene, and efficiency, but they produced contrasting urban outcomes." />
+              <ScrollRevealText text="The Haussmannian project integrated Les Halles into a coherent civic and neighborhood structure, even if it wasn’t adapted to the scale of the growth occurring there." />
+              <ScrollRevealText text="The late-modern redevelopment transformed the site into a controlled infrastructure operating at a metropolitan scale." />
+              <ScrollRevealText text="Over time, increasing technical and institutional control over urban space reduced spatial diversity, local urbanity, and everyday integration, reshaping the role of the city center itself." />
+            </div>
           </div>
 
 
