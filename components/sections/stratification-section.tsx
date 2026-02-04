@@ -212,7 +212,7 @@ export function StratificationSection() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 mb-12">
                             <div className="space-y-4">
-                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
                                     <Image
                                         src="/imagenes_extraidas_pdf/imagenes_2_diapo/plantabaja.png"
                                         alt="Ground floor plan"
@@ -223,7 +223,7 @@ export function StratificationSection() {
                                 <p className="text-sm text-center font-medium text-muted-foreground">Urban life at ground level</p>
                             </div>
                             <div className="space-y-4">
-                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
+                                <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-border/50 bg-secondary/10">
                                     <Image
                                         src="/imagenes_extraidas_pdf/imagenes_2_diapo/palnta_alta.png"
                                         alt="Upper floor plan"
