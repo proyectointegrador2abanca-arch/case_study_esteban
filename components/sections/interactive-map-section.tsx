@@ -31,6 +31,7 @@ const axonometryImages = [
                 top: "42.15%",
                 left: "58.33%",
                 title: "Pre-Haussmann Era",
+                imageCaption: "Les Halles et la rue de la Tonnellerie, painting of the old urban fabric, Canella Giuseppe, 1828",
                 description: `Population boom → hygiene crisis
 Medieval streets, vernacular housing
 First reconstruction plans: limited by cost`,
@@ -178,36 +179,45 @@ export function InteractiveMapSection() {
                                                             </div>
                                                         )}
                                                     </div>
+                                                    </div>
                                                 )}
 
-                                                <div className="p-6">
-                                                    <h4 className="text-lg font-semibold mb-3">{spot.title}</h4>
-                                                    <div className="text-base text-muted-foreground leading-relaxed space-y-1">
-                                                        {spot.description.split('\n').map((line, i) => (
-                                                            <p key={i}>{line}</p>
-                                                        ))}
-                                                    </div>
+                                            {'imageCaption' in spot && (
+                                                <div className="px-6 pt-3">
+                                                    <p className="text-xs text-muted-foreground italic text-center">
+                                                        {(spot as any).imageCaption}
+                                                    </p>
                                                 </div>
-                                            </HoverCardContent>
+                                            )}
+
+                                            <div className="p-6">
+                                                <h4 className="text-lg font-semibold mb-3">{spot.title}</h4>
+                                                <div className="text-base text-muted-foreground leading-relaxed space-y-1">
+                                                    {spot.description.split('\n').map((line, i) => (
+                                                        <p key={i}>{line}</p>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </HoverCardContent>
                                         </HoverCard>
+                                    ))}
+                            </div>
+                        </div>
+
+                            {/* Chronology Text between Axon 3 (index 2) and Axon 4 (index 3) */ }
+                            { index === 2 && (
+                            <div className="py-12 px-8 max-w-2xl mx-auto text-center">
+                                <div className="space-y-2 text-muted-foreground font-medium text-lg border-l-2 border-primary/20 pl-6 text-left">
+                                    {chronologyText.map((line, i) => (
+                                        <p key={i}>{line}</p>
                                     ))}
                                 </div>
                             </div>
-
-                            {/* Chronology Text between Axon 3 (index 2) and Axon 4 (index 3) */}
-                            {index === 2 && (
-                                <div className="py-12 px-8 max-w-2xl mx-auto text-center">
-                                    <div className="space-y-2 text-muted-foreground font-medium text-lg border-l-2 border-primary/20 pl-6 text-left">
-                                        {chronologyText.map((line, i) => (
-                                            <p key={i}>{line}</p>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    ))}
+                        )}
                 </div>
+                    ))}
             </div>
-        </section>
+        </div>
+        </section >
     );
 }
