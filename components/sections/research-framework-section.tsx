@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export function ResearchFrameworkSection() {
     return (
         <section id="research" className="bg-background py-24 px-6 md:px-12 lg:px-20 border-t border-border/40">
@@ -54,6 +56,59 @@ export function ResearchFrameworkSection() {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                </div>
+
+                {/* Sources */}
+                <div className="space-y-8">
+                    <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground text-center">
+                        Sources
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div className="space-y-3 text-center group">
+                            <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5 transition-transform group-hover:scale-[1.02]">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/sources1.png"
+                                    alt="Books Sources"
+                                    fill
+                                    className="object-contain p-2"
+                                />
+                            </div>
+                            <p className="text-sm font-medium text-foreground/80">Books</p>
+                        </div>
+                        <div className="space-y-3 text-center group">
+                            <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5 transition-transform group-hover:scale-[1.02]">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/sources2.png"
+                                    alt="Oral Sources"
+                                    fill
+                                    className="object-contain p-2"
+                                />
+                            </div>
+                            <p className="text-sm font-medium text-foreground/80">Oral Sources</p>
+                        </div>
+                        <div className="space-y-3 text-center group">
+                            <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5 transition-transform group-hover:scale-[1.02]">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/sources3.png"
+                                    alt="Cartographic Sources"
+                                    fill
+                                    className="object-contain p-2"
+                                />
+                            </div>
+                            <p className="text-sm font-medium text-foreground/80">Cartographic Sources</p>
+                        </div>
+                        <div className="space-y-3 text-center group">
+                            <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5 transition-transform group-hover:scale-[1.02]">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/sources4.png"
+                                    alt="Visual Sources"
+                                    fill
+                                    className="object-contain p-2"
+                                />
+                            </div>
+                            <p className="text-sm font-medium text-foreground/80">Visual Sources</p>
+                        </div>
                     </div>
                 </div>
 
