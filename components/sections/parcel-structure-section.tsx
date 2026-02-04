@@ -175,12 +175,7 @@ export function ParcelStructureSection() {
                             <p>In the late-modern period, blocks linked to the Forum were redeveloped as massive units, with internal spaces fully detached from public streets and largely inaccessible.</p>
                             <p>This evolution produces more regular but less adaptable urban forms.</p>
                         </div>
-                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
-                            <p>Haussmannian blocks replaced a dense network of small courtyards and passageways with fewer, larger, and more hierarchical inner spaces.</p>
-                            <p>Block porosity decreased, but buildings maintained a strong relationship with the street.</p>
-                            <p>In the late-modern period, blocks linked to the Forum were redeveloped as massive units, with internal spaces fully detached from public streets and largely inaccessible.</p>
-                            <p>This evolution produces more regular but less adaptable urban forms.</p>
-                        </div>
+                        {/* Duplicate block removed */}
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -264,6 +259,26 @@ export function ParcelStructureSection() {
                             <p className="font-medium text-foreground mb-2">Integration & Forum Era</p>
                             <p>Integration of the market in urban fabric vs. concentration of activity in a unique place during Forum and urban fabric out of view.</p>
                         </div>
+                    </div>
+                </div>
+
+                {/* Subsection 4: Findings */}
+                <div className="space-y-6 pt-12 border-t border-border/40">
+                    <div className="text-center space-y-2">
+                        <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+                            4. Findings
+                        </p>
+                    </div>
+                    <div className="max-w-3xl mx-auto text-center space-y-4 text-muted-foreground leading-relaxed">
+                        <p>
+                            Over time, increasing parcel size and block unification reduced the diversity and permeability of the urban fabric.
+                        </p>
+                        <p>
+                            While Haussmann rationalized blocks without severing street relations, the Forum accelerated separation between buildings and public space, reinforcing institutional and commercial control over formerly mixed and accessible urban environments, even if its on a limited scale here.
+                        </p>
+                        <p>
+                            Urban form becomes more predictable, but also less resilient and less socially rich.
+                        </p>
                     </div>
                 </div>
 
