@@ -21,16 +21,7 @@ export function AnnexesSection() {
                     </h2>
                 </div>
 
-                {/* Annex 1: Detailed Chronology */}
-                <div className="space-y-8">
-                    <h3 className="text-2xl font-medium text-foreground border-b border-border/40 pb-4">
-                        Annex 1: Detailed chronology
-                    </h3>
-                    <div className="text-muted-foreground">
-                        <p>Detailed historical timeline of the Les Halles transformations.</p>
-                        {/* Placeholder content - can be expanded later */}
-                    </div>
-                </div>
+
 
                 {/* Annex 2: Cadastral Maps */}
                 <div className="space-y-12">
@@ -50,52 +41,53 @@ export function AnnexesSection() {
                         <div className="w-full max-w-4xl mx-auto">
                             <Carousel className="w-full">
                                 <CarouselContent>
-                                    {
-                                        src: "/imagenes_extraidas_pdf/images/51.png",
-                                    caption: "Atlas de Jacoubet, 1836",
-                                    source: "Source: Bibliothèque historique de la ville de paris"
-                                    },
-                                    {
-                                        src: "/imagenes_extraidas_pdf/images/52.png",
-                                    caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
-                                    source: "Source: Archives de Paris"
-                                    },
-                                    {
-                                        src: "/imagenes_extraidas_pdf/images/53.png",
-                                    caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
-                                    source: "Source: Archives de Paris"
-                                    },
-                                    {
-                                        src: "/imagenes_extraidas_pdf/images/54.png",
-                                    caption: "Final Result"
-                                    },
-                                    {
-                                        src: "/imagenes_extraidas_pdf/images/anexo22.png",
-                                    caption: "Additional Reconstitution View"
-                                    }
+                                    {[
+                                        {
+                                            src: "/imagenes_extraidas_pdf/images/51.png",
+                                            caption: "Atlas de Jacoubet, 1836",
+                                            source: "Source: Bibliothèque historique de la ville de paris"
+                                        },
+                                        {
+                                            src: "/imagenes_extraidas_pdf/images/52.png",
+                                            caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
+                                            source: "Source: Archives de Paris"
+                                        },
+                                        {
+                                            src: "/imagenes_extraidas_pdf/images/53.png",
+                                            caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
+                                            source: "Source: Archives de Paris"
+                                        },
+                                        {
+                                            src: "/imagenes_extraidas_pdf/images/54.png",
+                                            caption: "Final Result"
+                                        },
+                                        {
+                                            src: "/imagenes_extraidas_pdf/images/anexo22.png",
+                                            caption: "Additional Reconstitution View"
+                                        }
                                     ].map((item, index) => (
-                                    <CarouselItem key={index}>
-                                        <div className="p-1">
-                                            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-border/50 bg-secondary/20">
-                                                <Image
-                                                    src={item.src}
-                                                    alt={item.caption}
-                                                    fill
-                                                    className="object-contain"
-                                                />
-                                            </div>
-                                            <div className="mt-4 text-center">
-                                                <p className="text-sm text-foreground font-medium">
-                                                    {item.caption}
-                                                </p>
-                                                {item.source && (
-                                                    <p className="text-xs text-muted-foreground italic mt-1">
-                                                        {item.source}
+                                        <CarouselItem key={index}>
+                                            <div className="p-1">
+                                                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-border/50 bg-secondary/20">
+                                                    <Image
+                                                        src={item.src}
+                                                        alt={item.caption}
+                                                        fill
+                                                        className="object-contain"
+                                                    />
+                                                </div>
+                                                <div className="mt-4 text-center">
+                                                    <p className="text-sm text-foreground font-medium">
+                                                        {item.caption}
                                                     </p>
-                                                )}
+                                                    {item.source && (
+                                                        <p className="text-xs text-muted-foreground italic mt-1">
+                                                            {item.source}
+                                                        </p>
+                                                    )}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </CarouselItem>
+                                        </CarouselItem>
                                     ))}
                                 </CarouselContent>
                                 <CarouselPrevious />
