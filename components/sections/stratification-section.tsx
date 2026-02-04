@@ -29,8 +29,8 @@ export function StratificationSection() {
                         </div>
                     </div>
                     <div className="w-full">
-                        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-                            <div className="lg:col-span-3">
+                        <div className="w-full max-w-5xl mx-auto space-y-12">
+                            <div>
                                 <LayerStack
                                     layers={[
                                         { src: "/imagenes_extraidas_pdf/imagenes_2_diapo/capa1.png", alt: "Layer 1: Underground Base", label: "Layer 1: Underground Base" },
@@ -42,25 +42,26 @@ export function StratificationSection() {
                                     Surface-based public space with service underground
                                 </p>
                             </div>
-                            <div className="lg:col-span-2 space-y-6">
-                                <ul className="space-y-4">
-                                    <li className="flex items-start gap-3">
-                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span className="h-2 w-2 rounded-full bg-primary" />
+
+                            <div className="max-w-4xl mx-auto bg-secondary/5 rounded-2xl p-8 border border-border/50">
+                                <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <li className="flex flex-col items-center text-center gap-2">
+                                        <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                            <span className="h-2.5 w-2.5 rounded-full bg-primary" />
                                         </div>
-                                        <p className="text-lg text-foreground font-medium">Urban life at ground level</p>
+                                        <p className="text-lg text-foreground font-medium leading-snug">Urban life at ground level</p>
                                     </li>
-                                    <li className="flex items-start gap-3">
-                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span className="h-2 w-2 rounded-full bg-primary" />
+                                    <li className="flex flex-col items-center text-center gap-2">
+                                        <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                            <span className="h-2.5 w-2.5 rounded-full bg-primary" />
                                         </div>
-                                        <p className="text-lg text-foreground font-medium">Underground as support, not public space</p>
+                                        <p className="text-lg text-foreground font-medium leading-snug">Underground as support, not public space</p>
                                     </li>
-                                    <li className="flex items-start gap-3">
-                                        <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span className="h-2 w-2 rounded-full bg-primary" />
+                                    <li className="flex flex-col items-center text-center gap-2">
+                                        <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mb-1">
+                                            <span className="h-2.5 w-2.5 rounded-full bg-primary" />
                                         </div>
-                                        <p className="text-lg text-foreground font-medium">Strong continuity between market and streets</p>
+                                        <p className="text-lg text-foreground font-medium leading-snug">Strong continuity between market and streets</p>
                                     </li>
                                 </ul>
                             </div>
