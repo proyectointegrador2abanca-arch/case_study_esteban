@@ -130,7 +130,15 @@ export function HeritageSection() {
                                             <li>Authoritarian planning, lack of democratic control</li>
                                             <li>No critic of loss of heritage concerning the old Paris</li>
                                         </ul>
-                                        <div className="pt-2">
+                                        <div className="pt-4">
+                                            <div className="relative aspect-[3/4] w-32 rounded overflow-hidden border border-border/50 mb-2">
+                                                <Image
+                                                    src="/imagenes_extraidas_pdf/images/libro1.png"
+                                                    alt="Les Comptes fantastiques d’Haussmann"
+                                                    fill
+                                                    className="object-cover"
+                                                />
+                                            </div>
                                             <p className="text-xs text-muted-foreground italic font-medium">Image: Jules Ferry, Les Comptes fantastiques d’Haussmann, 1868</p>
                                         </div>
                                     </td>
@@ -144,6 +152,14 @@ export function HeritageSection() {
                                             “We spend a lot of money unnecessarily on certain things, but we can certainly spend it on those things that will be something for our children in the future.”
                                             <span className="block mt-2 not-italic font-medium">- Resident interviewed about the fate of Les Halles</span>
                                         </blockquote>
+                                        <div className="relative aspect-[3/4] w-32 rounded overflow-hidden border border-border/50 mb-2">
+                                            <Image
+                                                src="/imagenes_extraidas_pdf/images/lirbo2.png"
+                                                alt="L’Observateur cover"
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                         <p className="text-xs text-muted-foreground italic font-medium">Image: Cover page of L’Observateur (12 July 1971)</p>
                                     </td>
                                 </tr>
@@ -155,6 +171,14 @@ export function HeritageSection() {
                                             <li>Modernization of the capital</li>
                                             <li>Architectural innovation (iron, glass, infrastructure)</li>
                                         </ul>
+                                        <div className="relative aspect-[3/4] w-32 rounded overflow-hidden border border-border/50 mb-2 mt-4">
+                                            <Image
+                                                src="/imagenes_extraidas_pdf/images/libro3.png"
+                                                alt="Mémoire du baron Haussmann"
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                         <p className="text-xs text-muted-foreground italic font-medium">Image: Mémoire du baron Haussmann, 1890-1893</p>
                                     </td>
                                     <td className="p-6 align-top space-y-4">
@@ -163,6 +187,14 @@ export function HeritageSection() {
                                             <li>Need for metropolitan transport infrastructure</li>
                                             <li>Economic redevelopment of the city center</li>
                                         </ul>
+                                        <div className="relative aspect-[3/4] w-32 rounded overflow-hidden border border-border/50 mb-2 mt-4">
+                                            <Image
+                                                src="/imagenes_extraidas_pdf/images/libro4.png"
+                                                alt="APUR Les Halles"
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                         <p className="text-xs text-muted-foreground italic font-medium">Image: APUR, Les Halles: Urbanisme ou Muséographie, 1971</p>
                                     </td>
                                 </tr>
