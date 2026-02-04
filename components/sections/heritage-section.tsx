@@ -210,27 +210,7 @@ export function HeritageSection() {
                             3. Changes born from indifference causing similar outrages
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/img214.jpg"
-                                alt="Romanticism / Victor Hugo"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                        <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/img215.jpg"
-                                alt="Change of direction"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-                    <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-                        Parallel between Victor Hugo and Romanticism and the change of direction for heritage after the demolition of Les Halles.
-                    </p>
+
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
                         <div className="space-y-3">
