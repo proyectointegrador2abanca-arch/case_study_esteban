@@ -43,47 +43,72 @@ export function AnnexesSection() {
                             <h4 className="text-xl font-medium text-foreground mb-4">
                                 1. Reconstitution of the cadastral map of 1836
                             </h4>
-                            <div className="space-y-4 text-muted-foreground leading-relaxed">
-                                <p>
-                                    Utilisation of the detailed cadastral plans from between 1830 and 1850 and the Jacoubet atlas to obtain a 3D taking into account the building courtyards public passages.
-                                </p>
-                                <p>
-                                    Adjustments of scale were made and there isnt 100% correspondance because the Jacoubet atlas was simplified, and the width of streets were normalised.
-                                </p>
-                            </div>
+
                         </div>
 
                         {/* Carousel */}
                         <div className="w-full max-w-4xl mx-auto">
                             <Carousel className="w-full">
                                 <CarouselContent>
-                                    {[
-                                        { src: "/imagenes_extraidas_pdf/images/51.png", caption: "Process of reconstitution 1" },
-                                        { src: "/imagenes_extraidas_pdf/images/52.png", caption: "Process of reconstitution 2" },
-                                        { src: "/imagenes_extraidas_pdf/images/53.png", caption: "Process of reconstitution 3" },
-                                        { src: "/imagenes_extraidas_pdf/images/54.png", caption: "Final Result" },
-                                        { src: "/imagenes_extraidas_pdf/images/anexo22.png", caption: "Additional Reconstitution View" }
+                                    {
+                                        src: "/imagenes_extraidas_pdf/images/51.png",
+                                    caption: "Atlas de Jacoubet, 1836",
+                                    source: "Source: Bibliothèque historique de la ville de paris"
+                                    },
+                                    {
+                                        src: "/imagenes_extraidas_pdf/images/52.png",
+                                    caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
+                                    source: "Source: Archives de Paris"
+                                    },
+                                    {
+                                        src: "/imagenes_extraidas_pdf/images/53.png",
+                                    caption: "Parcel maps from the Vasserot and Bellanger Atlas (1830-1850)",
+                                    source: "Source: Archives de Paris"
+                                    },
+                                    {
+                                        src: "/imagenes_extraidas_pdf/images/54.png",
+                                    caption: "Final Result"
+                                    },
+                                    {
+                                        src: "/imagenes_extraidas_pdf/images/anexo22.png",
+                                    caption: "Additional Reconstitution View"
+                                    }
                                     ].map((item, index) => (
-                                        <CarouselItem key={index}>
-                                            <div className="p-1">
-                                                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-border/50 bg-secondary/20">
-                                                    <Image
-                                                        src={item.src}
-                                                        alt={item.caption}
-                                                        fill
-                                                        className="object-contain"
-                                                    />
-                                                </div>
-                                                <p className="text-center text-sm text-muted-foreground mt-4">
+                                    <CarouselItem key={index}>
+                                        <div className="p-1">
+                                            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-border/50 bg-secondary/20">
+                                                <Image
+                                                    src={item.src}
+                                                    alt={item.caption}
+                                                    fill
+                                                    className="object-contain"
+                                                />
+                                            </div>
+                                            <div className="mt-4 text-center">
+                                                <p className="text-sm text-foreground font-medium">
                                                     {item.caption}
                                                 </p>
+                                                {item.source && (
+                                                    <p className="text-xs text-muted-foreground italic mt-1">
+                                                        {item.source}
+                                                    </p>
+                                                )}
                                             </div>
-                                        </CarouselItem>
+                                        </div>
+                                    </CarouselItem>
                                     ))}
                                 </CarouselContent>
                                 <CarouselPrevious />
                                 <CarouselNext />
                             </Carousel>
+                        </div>
+                        <div className="space-y-4 text-muted-foreground leading-relaxed max-w-4xl mx-auto pt-8">
+                            <p>
+                                Utilisation of the detailed cadastral plans from between 1830 and 1850 and the Jacoubet atlas to obtain a 3D taking into account the building courtyards public passages.
+                            </p>
+                            <p>
+                                Adjustments of scale were made and there isnt 100% correspondance because the Jacoubet atlas was simplified, and the width of streets were normalised.
+                            </p>
                         </div>
                     </div>
                 </div>
