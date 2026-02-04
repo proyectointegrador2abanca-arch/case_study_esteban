@@ -157,29 +157,41 @@ export function HeritageSection() {
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/images/caputra1.png"
-                                alt="Heritage impact 1"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="space-y-3">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/caputra1.png"
+                                    alt="Heritage impact 1"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground italic">
+                                Jacques Chirac, Mayor of Paris, presents the new model of the project in 1980.
+                            </p>
                         </div>
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/images/captura22.png"
-                                alt="Heritage impact 2"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="space-y-3">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/captura22.png"
+                                    alt="Heritage impact 2"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground italic">
+                                Example of a counter-proposal to the 1979 international competition to fill the Void
+                            </p>
                         </div>
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
-                            <Image
-                                src="/imagenes_extraidas_pdf/images/captura33.png"
-                                alt="Heritage impact 3"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="space-y-3">
+                            <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/captura33.png"
+                                    alt="Heritage impact 3"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
 
