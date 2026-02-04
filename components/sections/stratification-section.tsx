@@ -114,8 +114,8 @@ export function StratificationSection() {
                     </div>
 
                     <div className="w-full max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-                            <div>
+                        <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-0 items-center mb-12">
+                            <div className="relative z-10">
                                 <LayerStack
                                     layers={[
                                         { src: "/capas/SUB 7-1.png", alt: "Level -7", label: "Level -7: Lowest Level" },
@@ -131,7 +131,7 @@ export function StratificationSection() {
                                     Interactive stratification of the Forum des Halles levels. Use arrows to explore.
                                 </p>
                             </div>
-                            <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-secondary/5 border border-border/50 shadow-sm">
+                            <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-secondary/5 border border-border/50 shadow-sm -mt-8 lg:mt-0 lg:-ml-12 z-0">
                                 <Image
                                     src="/imagenes_extraidas_pdf/imagenes_2_diapo/7capas_imagen:completa.png"
                                     alt="Complete stratification visualization"
