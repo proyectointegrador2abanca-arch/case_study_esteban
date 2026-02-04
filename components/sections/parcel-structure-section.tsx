@@ -63,8 +63,10 @@ export function ParcelStructureSection() {
                         </div>
 
                         {/* Pair 2: img187 / img188 */}
-                        {/* Pair 2: img187 / img188 */}
                         <div className="space-y-2">
+                            <p className="text-sm font-medium text-foreground text-center">
+                                The Baltard markets in the Haussmannian fabric
+                            </p>
                             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
                                 {/* Default: img187 (Before) */}
                                 <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
