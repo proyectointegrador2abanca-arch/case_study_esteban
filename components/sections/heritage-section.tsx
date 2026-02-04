@@ -155,6 +155,50 @@ export function HeritageSection() {
                     <p className="text-center text-muted-foreground max-w-2xl mx-auto">
                         Parallel between Victor Hugo and Romanticism and the change of direction for heritage after the demolition of Les Halles.
                     </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
+                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <Image
+                                src="/imagenes_extraidas_pdf/images/caputra1.png"
+                                alt="Heritage impact 1"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <Image
+                                src="/imagenes_extraidas_pdf/images/captura22.png"
+                                alt="Heritage impact 2"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50">
+                            <Image
+                                src="/imagenes_extraidas_pdf/images/captura33.png"
+                                alt="Heritage impact 3"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="max-w-4xl mx-auto pt-8">
+                        <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Heritage is historically constructed</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Economic priorities dominate decisions</p>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-3">
+                                <div className="h-1.5 w-1.5 rounded-full bg-primary mb-1" />
+                                <p className="text-base text-muted-foreground font-medium leading-snug">Loss acknowledged but accepted</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Subsection 4: Findings */}
