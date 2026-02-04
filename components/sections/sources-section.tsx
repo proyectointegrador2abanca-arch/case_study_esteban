@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const sourcesData = [
     {
         category: "Books",
+        image: "/imagenes_extraidas_pdf/images/sources1.png",
         items: [
             "APUR. Paris Projet n°25–26: Les Halles et le centre de Paris. Paris: Atelier Parisien d’Urbanisme, 1985.",
             "Baltard, Victor. Monographie des Halles centrales de Paris. Paris: Typographie Impériale, 1863–1872.",
@@ -16,6 +18,7 @@ const sourcesData = [
     },
     {
         category: "Oral and Media Sources",
+        image: "/imagenes_extraidas_pdf/images/sources2.png",
         items: [
             "Institut National de l’Audiovisuel (INA). 1969: Les Halles, mémoires du ventre de Paris. Television documentary, France, 1969.",
             "Chemetov, Paul. “Le Forum des Halles, une reconstruction nécessaire.” Interview by INA, 1985.",
@@ -23,6 +26,7 @@ const sourcesData = [
     },
     {
         category: "Visual sources",
+        image: "/imagenes_extraidas_pdf/images/sources4.png",
         items: [
             "Archives de la Ville de Paris. Photographies aériennes des Halles, 1971–1985. Paris: Archives de Paris.",
             "Bibliothèque Historique de la Ville de Paris (BHDV). Photographies du quartier des Halles. Paris.",
@@ -31,6 +35,7 @@ const sourcesData = [
     },
     {
         category: "Cartographic Sources",
+        image: "/imagenes_extraidas_pdf/images/sources3.png",
         items: [
             "Archives de Paris. Plan parcellaire de Paris, 1836. Paris: Archives de Paris.",
             "Archives de Paris. Plan parcellaire de Paris, 1904. Paris: Archives de Paris.",
@@ -84,6 +89,14 @@ export function SourcesSection() {
                                 transform: isVisible ? "translateY(0)" : "translateY(20px)"
                             }}
                         >
+                            <div className="relative aspect-[3/4] w-full mb-6 rounded-lg overflow-hidden border border-border/50 bg-secondary/5">
+                                <Image
+                                    src={category.image}
+                                    alt={category.category}
+                                    fill
+                                    className="object-contain p-2"
+                                />
+                            </div>
                             <h3 className="text-sm font-semibold uppercase tracking-wider text-primary mb-6">
                                 {category.category}
                             </h3>
