@@ -63,35 +63,41 @@ export function ParcelStructureSection() {
                         </div>
 
                         {/* Pair 2: img187 / img188 */}
-                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
-                            {/* Default: img187 (Before) */}
-                            <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
-                                    alt="Parcel Structure View 2A"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute bottom-6 left-6">
-                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                        Before
-                                    </span>
+                        {/* Pair 2: img187 / img188 */}
+                        <div className="space-y-2">
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
+                                {/* Default: img187 (Before) */}
+                                <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img187.jpg"
+                                        alt="Parcel Structure View 2A"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    <div className="absolute bottom-6 left-6">
+                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                            Before
+                                        </span>
+                                    </div>
+                                </div>
+                                {/* Hover: img188 (After) */}
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
+                                        alt="Parcel Structure View 2B"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    <div className="absolute bottom-6 left-6">
+                                        <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
+                                            After
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            {/* Hover: img188 (After) */}
-                            <div className="absolute inset-0 z-0">
-                                <Image
-                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/img188.jpg"
-                                    alt="Parcel Structure View 2B"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute bottom-6 left-6">
-                                    <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                                        After
-                                    </span>
-                                </div>
-                            </div>
+                            <p className="text-xs text-center text-muted-foreground italic leading-tight px-4">
+                                Rue des Prouvaires. View taken from rue de Roule and looking north, 1865 (source: BHDV, anct bibliothèque de la préfecture de la Seine)
+                            </p>
                         </div>
 
                         {/* Pair 3: img186 / img185 (Swapped: 186 is now Default/Before) */}
