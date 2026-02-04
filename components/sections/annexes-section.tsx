@@ -102,6 +102,43 @@ export function AnnexesSection() {
                                 Adjustments of scale were made and there isnt 100% correspondance because the Jacoubet atlas was simplified, and the width of streets were normalised.
                             </p>
                         </div>
+
+                        {/* 2. Other maps */}
+                        <div className="pt-8 border-t border-border/20">
+                            <h4 className="text-xl font-medium text-foreground mb-8">
+                                2. Other maps
+                            </h4>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-3 text-center">
+                                    <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5">
+                                        <Image
+                                            src="/imagenes_extraidas_pdf/images/map1.png"
+                                            alt="Atlas de Jacoubet, 1836"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Atlas de Jacoubet, 1836</p>
+                                        <p className="text-xs text-muted-foreground italic">Source: Bibliothèque historique de la ville de paris</p>
+                                    </div>
+                                </div>
+                                <div className="space-y-3 text-center">
+                                    <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden border border-border/50 bg-secondary/5">
+                                        <Image
+                                            src="/imagenes_extraidas_pdf/images/mapa2.png"
+                                            alt="Cadastral map of 1904"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Cadastral map of 1904</p>
+                                        <p className="text-xs text-muted-foreground italic">Source: Archives de Paris</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
