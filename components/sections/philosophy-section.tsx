@@ -179,6 +179,20 @@ export function PhilosophySection() {
             From the 19th-century industrial market to the modern underground forum, Les Halles represents the shifting visions of Paris.
           </p>
         </div>
+
+        <div className="max-w-5xl mx-auto mt-24">
+          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-border/50">
+            <Image
+              src="/imagenes_extraidas_pdf/images/conclusion.png"
+              alt="Hole of Les Halles"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <p className="mt-4 text-center text-sm text-muted-foreground italic">
+            “Hole of Les Halles”, Photo by Jean Pierre Maffre, 1973
+          </p>
+        </div>
       </div>
     </section>
   );
