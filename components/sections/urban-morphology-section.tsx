@@ -23,13 +23,18 @@ export function UrbanMorphologySection() {
                             <p>Baltard’s pavilions acted as open civic structures, connecting the market to the surrounding streets.</p>
                             <p>Rather than isolating the site, the project reinforced its role as a central piece within a continuous urban fabric.</p>
                         </div>
-                        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                            <Image
-                                src="/imagenes_extraidas_pdf/imagenes_2_diapo/calles.png"
-                                alt="Haussmann Transformation Details"
-                                fill
-                                className="object-contain bg-secondary/5"
-                            />
+                        <div className="space-y-2">
+                            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/imagenes_2_diapo/calles.png"
+                                    alt="Haussmann Transformation Details"
+                                    fill
+                                    className="object-contain bg-secondary/5"
+                                />
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground italic">
+                                Scale of Hausssmanian’s transformation between 1836 and 1904
+                            </p>
                         </div>
                     </div>
                 </div>
