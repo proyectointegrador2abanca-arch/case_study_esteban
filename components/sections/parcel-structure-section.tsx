@@ -67,6 +67,19 @@ export function ParcelStructureSection() {
                             <p className="text-sm font-medium text-foreground text-center">
                                 The Baltard markets in the Haussmannian fabric
                             </p>
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm bg-muted mb-4">
+                                <Image
+                                    src="/imagenes_extraidas_pdf/images/interactive2.png"
+                                    alt="Baltard Markets Monograph Excerpt"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground italic leading-tight px-4 mb-4">
+                                Excerpts from Victor Baltard, Monographie des Halles centrales de Paris (Paris, 1863–1872)
+                                <br />
+                                Source: Cité de l'architecture & du patrimoine/Musée des Monuments français
+                            </p>
                             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/50 shadow-sm group bg-muted">
                                 {/* Default: img187 (Before) */}
                                 <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0 z-10">
