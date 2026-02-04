@@ -292,7 +292,7 @@ export function ParcelStructureSection() {
                             Urban form becomes more predictable, but also less resilient and less socially rich.
                         </p>
 
-                        <div className="pt-8 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 items-center max-w-5xl mx-auto text-left">
+                        <div className="pt-8 grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-12 items-center max-w-7xl mx-auto text-left">
                             <div className="space-y-4">
                                 <div className="relative w-full">
                                     <Image
