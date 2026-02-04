@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
 
 export function AbstractSection() {
+    const abstractRef = useRef<HTMLDivElement>(null);
     const [scrollProgress, setScrollProgress] = useState(0);
 
     const abstractParagraphs = [
@@ -79,9 +80,5 @@ export function AbstractSection() {
                 </div>
             </div>
         </div>
-    );
-                </div >
-            </div >
-        </div >
     );
 }
