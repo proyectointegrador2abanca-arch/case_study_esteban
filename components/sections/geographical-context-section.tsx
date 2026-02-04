@@ -60,6 +60,10 @@ export function GeographicalContextSection() {
                             className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                     </div>
+                    <div className="text-center space-y-1 mt-4">
+                        <p className="text-sm font-medium text-foreground">Case study limits</p>
+                        <p className="text-xs text-muted-foreground">Source: opendata.apur.org 2023</p>
+                    </div>
                 </div>
             </div>
         </section>
