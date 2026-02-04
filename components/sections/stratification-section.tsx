@@ -39,7 +39,7 @@ export function StratificationSection() {
                                     ]}
                                 />
                                 <p className="mt-4 text-center text-sm text-muted-foreground">
-                                    Exploded 3D of Haussman plan showing stratification of layers.
+                                    Surface-based public space with service underground
                                 </p>
                             </div>
                             <div className="lg:col-span-2 space-y-6">
