@@ -61,7 +61,8 @@ export function AnnexesSection() {
                                         { src: "/imagenes_extraidas_pdf/images/51.png", caption: "Process of reconstitution 1" },
                                         { src: "/imagenes_extraidas_pdf/images/52.png", caption: "Process of reconstitution 2" },
                                         { src: "/imagenes_extraidas_pdf/images/53.png", caption: "Process of reconstitution 3" },
-                                        { src: "/imagenes_extraidas_pdf/images/54.png", caption: "Final Result" }
+                                        { src: "/imagenes_extraidas_pdf/images/54.png", caption: "Final Result" },
+                                        { src: "/imagenes_extraidas_pdf/images/anexo22.png", caption: "Additional Reconstitution View" }
                                     ].map((item, index) => (
                                         <CarouselItem key={index}>
                                             <div className="p-1">
