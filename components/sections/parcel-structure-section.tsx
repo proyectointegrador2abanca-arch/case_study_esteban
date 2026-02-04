@@ -169,6 +169,12 @@ export function ParcelStructureSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             2. Block typology & inner space
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>Haussmannian blocks replaced a dense network of small courtyards and passageways with fewer, larger, and more hierarchical inner spaces.</p>
+                            <p>Block porosity decreased, but buildings maintained a strong relationship with the street.</p>
+                            <p>In the late-modern period, blocks linked to the Forum were redeveloped as massive units, with internal spaces fully detached from public streets and largely inaccessible.</p>
+                            <p>This evolution produces more regular but less adaptable urban forms.</p>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

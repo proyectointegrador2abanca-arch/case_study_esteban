@@ -20,6 +20,12 @@ export function HeritageSection() {
                         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                             1. Saint-Eustache as constant
                         </p>
+                        <div className="max-w-3xl mx-auto pt-4 text-muted-foreground leading-relaxed text-left space-y-2 pb-6">
+                            <p>Saint-Eustache illustrates 19th-century heritage perception.</p>
+                            <p>Following the French Revolution, monumental and exceptional buildings were identified as national heritage.</p>
+                            <p>As a result, Saint-Eustache was preserved and restored throughout successive transformations of Les Halles.</p>
+                            <p>Its continuity contrasts sharply with the surrounding fabric, highlighting how heritage protection was historically limited to monuments rather than ordinary urban structures.</p>
+                        </div>
                     </div>
                     <div className="w-full mt-8">
                         <Image
